@@ -1,0 +1,2220 @@
+﻿Program.Sub.ScreenSU.Start
+Gui.frmInspPlan..Create(BaseForm)
+Gui.frmInspPlan..Caption("Inspection Plan Setup")
+Gui.frmInspPlan..Size(17670,5760)
+Gui.frmInspPlan..MinX(0)
+Gui.frmInspPlan..MinY(0)
+Gui.frmInspPlan..Position(0,0)
+Gui.frmInspPlan..AlwaysOnTop(False)
+Gui.frmInspPlan..FontName("Tahoma")
+Gui.frmInspPlan..FontSize(8.25)
+Gui.frmInspPlan..ControlBox(True)
+Gui.frmInspPlan..MaxButton(True)
+Gui.frmInspPlan..MinButton(True)
+Gui.frmInspPlan..MousePointer(0)
+Gui.frmInspPlan..Moveable(True)
+Gui.frmInspPlan..Sizeable(True)
+Gui.frmInspPlan..ShowInTaskBar(True)
+Gui.frmInspPlan..TitleBar(True)
+Gui.frmInspPlan..Event(UnLoad,frmInspPlan_UnLoad)
+Gui.frmInspPlan.GSGC_InspPlan.Create(GsGridControl)
+Gui.frmInspPlan.GSGC_InspPlan.Enabled(True)
+Gui.frmInspPlan.GSGC_InspPlan.Visible(True)
+Gui.frmInspPlan.GSGC_InspPlan.Zorder(0)
+Gui.frmInspPlan.GSGC_InspPlan.Size(17370,4440)
+Gui.frmInspPlan.GSGC_InspPlan.Position(150,735)
+Gui.frmInspPlan.GSGC_InspPlan.Anchor(15)
+Gui.frmInspPlan.GSGC_InspPlan.Event(RowCellClick,GSGC_InspPlan_RowCellClick)
+Gui.frmInspPlan.txtRouter.Create(TextBox,"",True,1845,300,0,1365,255,False,0,"Tahoma",8.25,,1)
+Gui.frmInspPlan.lblRouter.Create(Label,"Router No.",True,795,195,0,390,300,True,0,"Tahoma",8.25,,0,0)
+Gui.frmInspPlan.lblRouter.BorderStyle(0)
+Gui.frmInspPlan.lblSequence.Create(Label,"Sequence:",True,765,195,0,3315,300,True,0,"Tahoma",8.25,,0,0)
+Gui.frmInspPlan.lblSequence.BorderStyle(0)
+Gui.frmInspPlan.ddlSequences.Create(DropDownList)
+Gui.frmInspPlan.ddlSequences.Enabled(True)
+Gui.frmInspPlan.ddlSequences.Visible(True)
+Gui.frmInspPlan.ddlSequences.Zorder(0)
+Gui.frmInspPlan.ddlSequences.Size(5895,300)
+Gui.frmInspPlan.ddlSequences.Position(4230,255)
+Gui.frmInspPlan.ddlSequences.FontName("Tahoma")
+Gui.frmInspPlan.ddlSequences.FontSize(8.25)
+Gui.frmInspPlan.ddlSequences.Event(Change,ddlSequences_Change)
+Gui.frmInspPlan.cmdAddItem.Create(Button)
+Gui.frmInspPlan.cmdAddItem.Enabled(True)
+Gui.frmInspPlan.cmdAddItem.Visible(True)
+Gui.frmInspPlan.cmdAddItem.Zorder(0)
+Gui.frmInspPlan.cmdAddItem.Size(1125,345)
+Gui.frmInspPlan.cmdAddItem.Position(16275,240)
+Gui.frmInspPlan.cmdAddItem.Caption("Add Item")
+Gui.frmInspPlan.cmdAddItem.FontName("Tahoma")
+Gui.frmInspPlan.cmdAddItem.FontSize(8.25)
+Gui.frmInspPlan.cmdAddItem.Event(Click,cmdAddItem_Click)
+Gui.frmInspPlan.cmdAddItem.Anchor(9)
+Gui.frmInspPlan.lblWO.Create(Label,"Work Order",True,840,195,0,10320,300,True,0,"Tahoma",8.25,,0,0)
+Gui.frmInspPlan.lblWO.BorderStyle(0)
+Gui.frmInspPlan.lblWO.Anchor(9)
+Gui.frmInspPlan.lblSuffix.Create(Label,"Suffix",True,420,195,0,13215,300,True,0,"Tahoma",8.25,,0,0)
+Gui.frmInspPlan.lblSuffix.BorderStyle(0)
+Gui.frmInspPlan.lblSuffix.Anchor(9)
+Gui.frmInspPlan.txtWO.Create(TextBox,"",True,1845,300,0,11265,240,False,0,"Tahoma",8.25,,1)
+Gui.frmInspPlan.txtWO.Anchor(9)
+Gui.frmInspPlan.txtSuffix.Create(TextBox,"",True,1095,300,0,13710,240,False,0,"Tahoma",8.25,,1)
+Gui.frmInspPlan.txtSuffix.Anchor(9)
+Gui.frmInspPlan.chkScribe.Create(CheckBox)
+Gui.frmInspPlan.chkScribe.Enabled(False)
+Gui.frmInspPlan.chkScribe.Visible(True)
+Gui.frmInspPlan.chkScribe.Zorder(0)
+Gui.frmInspPlan.chkScribe.Size(1290,300)
+Gui.frmInspPlan.chkScribe.Position(14880,240)
+Gui.frmInspPlan.chkScribe.Caption("Scribe Check")
+Gui.frmInspPlan.chkScribe.FontName("Tahoma")
+Gui.frmInspPlan.chkScribe.FontSize(8.25)
+Gui.frmInspPlan.chkScribe.Event(Change,chkScribe_Change1)
+Gui.frmInspType..Create(BaseForm)
+Gui.frmInspType..Caption("Inspection Type Setup")
+Gui.frmInspType..Size(8760,6720)
+Gui.frmInspType..MinX(0)
+Gui.frmInspType..MinY(0)
+Gui.frmInspType..Position(0,0)
+Gui.frmInspType..AlwaysOnTop(False)
+Gui.frmInspType..FontName("Tahoma")
+Gui.frmInspType..FontSize(8.25)
+Gui.frmInspType..ControlBox(True)
+Gui.frmInspType..MaxButton(True)
+Gui.frmInspType..MinButton(True)
+Gui.frmInspType..MousePointer(0)
+Gui.frmInspType..Moveable(True)
+Gui.frmInspType..Sizeable(True)
+Gui.frmInspType..ShowInTaskBar(True)
+Gui.frmInspType..TitleBar(True)
+Gui.frmInspType..Event(UnLoad,frmInspType_UnLoad)
+Gui.frmInspType.tabSetup.Create(Tab)
+Gui.frmInspType.tabSetup.Enabled(True)
+Gui.frmInspType.tabSetup.Visible(True)
+Gui.frmInspType.tabSetup.Zorder(0)
+Gui.frmInspType.tabSetup.Size(8760,6735)
+Gui.frmInspType.tabSetup.Position(0,0)
+Gui.frmInspType.tabSetup.FontName("Tahoma")
+Gui.frmInspType.tabSetup.FontSize(8.25)
+Gui.frmInspType.tabSetup.Dock(5)
+Gui.frmInspType.tabSetup.Tabs(2)
+Gui.frmInspType.tabSetup.SetTab(0)
+Gui.frmInspType.tabSetup.Caption("Inspection")
+Gui.frmInspType.tabSetup.SetTab(1)
+Gui.frmInspType.tabSetup.Caption("Measure")
+Gui.frmInspType.GSGCMeasure.Create(GsGridControl)
+Gui.frmInspType.GSGCMeasure.Enabled(True)
+Gui.frmInspType.GSGCMeasure.Visible(True)
+Gui.frmInspType.GSGCMeasure.Zorder(0)
+Gui.frmInspType.GSGCMeasure.Size(8730,4020)
+Gui.frmInspType.GSGCMeasure.Position(0,0)
+Gui.frmInspType.GSGCMeasure.Parent("tabSetup",1)
+Gui.frmInspType.GSGCMeasure.Dock(1)
+Gui.frmInspType.GSGCMeasure.Event(RowCellClick,GSGCMeasure_RowCellClick)
+Gui.frmInspType.GSGCMeasure.Anchor(15)
+Gui.frmInspType.cboFilmType.Create(ComboBox)
+Gui.frmInspType.cboFilmType.Enabled(True)
+Gui.frmInspType.cboFilmType.Visible(True)
+Gui.frmInspType.cboFilmType.Zorder(0)
+Gui.frmInspType.cboFilmType.Size(2640,300)
+Gui.frmInspType.cboFilmType.Position(1290,4650)
+Gui.frmInspType.cboFilmType.FontName("Tahoma")
+Gui.frmInspType.cboFilmType.FontSize(8.25)
+Gui.frmInspType.cboFilmType.Parent("tabSetup",1)
+Gui.frmInspType.cboFilmType.TabStop(True)
+Gui.frmInspType.cboFilmType.TabIndex(2)
+Gui.frmInspType.cboFilmType.Anchor(6)
+Gui.frmInspType.cmdSubmitMeasures.Create(Button)
+Gui.frmInspType.cmdSubmitMeasures.Enabled(True)
+Gui.frmInspType.cmdSubmitMeasures.Visible(True)
+Gui.frmInspType.cmdSubmitMeasures.Zorder(0)
+Gui.frmInspType.cmdSubmitMeasures.Size(1125,345)
+Gui.frmInspType.cmdSubmitMeasures.Position(4260,5235)
+Gui.frmInspType.cmdSubmitMeasures.Caption("Submit Values")
+Gui.frmInspType.cmdSubmitMeasures.FontName("Tahoma")
+Gui.frmInspType.cmdSubmitMeasures.FontSize(8.25)
+Gui.frmInspType.cmdSubmitMeasures.Parent("tabSetup",1)
+Gui.frmInspType.cmdSubmitMeasures.Event(Click,cmdSubmitMeasures_Click)
+Gui.frmInspType.cmdSubmitMeasures.TabStop(True)
+Gui.frmInspType.cmdSubmitMeasures.TabIndex(4)
+Gui.frmInspType.cmdSubmitMeasures.Anchor(6)
+Gui.frmInspType.cmdMeasureNew.Create(Button)
+Gui.frmInspType.cmdMeasureNew.Enabled(True)
+Gui.frmInspType.cmdMeasureNew.Visible(True)
+Gui.frmInspType.cmdMeasureNew.Zorder(0)
+Gui.frmInspType.cmdMeasureNew.Size(1125,345)
+Gui.frmInspType.cmdMeasureNew.Position(120,4155)
+Gui.frmInspType.cmdMeasureNew.Caption("New Measure")
+Gui.frmInspType.cmdMeasureNew.FontName("Tahoma")
+Gui.frmInspType.cmdMeasureNew.FontSize(8.25)
+Gui.frmInspType.cmdMeasureNew.Parent("tabSetup",1)
+Gui.frmInspType.cmdMeasureNew.Event(Click,cmdMeasureNew_Click)
+Gui.frmInspType.cmdMeasureNew.TabStop(True)
+Gui.frmInspType.cmdMeasureNew.TabIndex(1)
+Gui.frmInspType.cmdMeasureNew.Anchor(6)
+Gui.frmInspType.lblFilmType.Create(Label,"Film Type",True,675,195,0,480,4710,True,0,"Tahoma",8.25,,0,0)
+Gui.frmInspType.lblFilmType.BorderStyle(0)
+Gui.frmInspType.lblFilmType.Parent("tabSetup",1)
+Gui.frmInspType.lblFilmType.Anchor(6)
+Gui.frmInspType.cmdDeleteValues.Create(Button)
+Gui.frmInspType.cmdDeleteValues.Enabled(True)
+Gui.frmInspType.cmdDeleteValues.Visible(True)
+Gui.frmInspType.cmdDeleteValues.Zorder(0)
+Gui.frmInspType.cmdDeleteValues.Size(1125,345)
+Gui.frmInspType.cmdDeleteValues.Position(2730,5235)
+Gui.frmInspType.cmdDeleteValues.Caption("Delete Values")
+Gui.frmInspType.cmdDeleteValues.FontName("Tahoma")
+Gui.frmInspType.cmdDeleteValues.FontSize(8.25)
+Gui.frmInspType.cmdDeleteValues.Parent("tabSetup",1)
+Gui.frmInspType.cmdDeleteValues.Event(Click,cmdDeleteValues_Click)
+Gui.frmInspType.cmdDeleteValues.Anchor(6)
+Gui.frmInspType.lblRIOperator.Create(Label,"RI Operator",True,870,195,0,4740,4710,True,0,"Tahoma",8.25,,0,0)
+Gui.frmInspType.lblRIOperator.BorderStyle(0)
+Gui.frmInspType.lblRIOperator.Parent("tabSetup",1)
+Gui.frmInspType.lblRIOperator.Anchor(10)
+Gui.frmInspType.cboRIOperator.Create(ComboBox)
+Gui.frmInspType.cboRIOperator.Enabled(True)
+Gui.frmInspType.cboRIOperator.Visible(True)
+Gui.frmInspType.cboRIOperator.Zorder(0)
+Gui.frmInspType.cboRIOperator.Size(1500,300)
+Gui.frmInspType.cboRIOperator.Position(5775,4650)
+Gui.frmInspType.cboRIOperator.FontName("Tahoma")
+Gui.frmInspType.cboRIOperator.FontSize(8.25)
+Gui.frmInspType.cboRIOperator.Parent("tabSetup",1)
+Gui.frmInspType.cboRIOperator.TabStop(True)
+Gui.frmInspType.cboRIOperator.TabIndex(3)
+Gui.frmInspType.cboRIOperator.Anchor(10)
+Gui.frmInspType.cmdInspectionNew.Create(Button)
+Gui.frmInspType.cmdInspectionNew.Enabled(True)
+Gui.frmInspType.cmdInspectionNew.Visible(True)
+Gui.frmInspType.cmdInspectionNew.Zorder(0)
+Gui.frmInspType.cmdInspectionNew.Size(1125,345)
+Gui.frmInspType.cmdInspectionNew.Position(120,5775)
+Gui.frmInspType.cmdInspectionNew.Caption("New Insp")
+Gui.frmInspType.cmdInspectionNew.FontName("Tahoma")
+Gui.frmInspType.cmdInspectionNew.FontSize(8.25)
+Gui.frmInspType.cmdInspectionNew.Parent("tabSetup",0)
+Gui.frmInspType.cmdInspectionNew.Event(Click,cmdTypeNew_Click)
+Gui.frmInspType.cmdInspectionNew.Anchor(6)
+Gui.frmInspType.GSGCInsp.Create(GsGridControl)
+Gui.frmInspType.GSGCInsp.Enabled(True)
+Gui.frmInspType.GSGCInsp.Visible(True)
+Gui.frmInspType.GSGCInsp.Zorder(0)
+Gui.frmInspType.GSGCInsp.Size(8730,5550)
+Gui.frmInspType.GSGCInsp.Position(0,0)
+Gui.frmInspType.GSGCInsp.Parent("tabSetup",0)
+Gui.frmInspType.GSGCInsp.Dock(1)
+Gui.frmInspType.GSGCInsp.Event(RowCellClick,GSGCInsp_RowCellClick)
+Gui.frmInspType.GSGCInsp.Anchor(15)
+Gui.frmNewType..Create(BaseForm)
+Gui.frmNewType..Caption("Add New Inspection ")
+Gui.frmNewType..Size(6675,2220)
+Gui.frmNewType..MinX(0)
+Gui.frmNewType..MinY(0)
+Gui.frmNewType..Position(0,0)
+Gui.frmNewType..AlwaysOnTop(True)
+Gui.frmNewType..FontName("Tahoma")
+Gui.frmNewType..FontSize(8.25)
+Gui.frmNewType..ControlBox(True)
+Gui.frmNewType..MaxButton(True)
+Gui.frmNewType..MinButton(True)
+Gui.frmNewType..MousePointer(0)
+Gui.frmNewType..Moveable(True)
+Gui.frmNewType..Sizeable(True)
+Gui.frmNewType..ShowInTaskBar(True)
+Gui.frmNewType..TitleBar(True)
+Gui.frmNewType..Event(UnLoad,frmNewType_UnLoad)
+Gui.frmNewType.lblMethod.Create(Label,"Method",True,540,195,0,990,270,True,0,"Tahoma",8.25,,0,0)
+Gui.frmNewType.lblMethod.BorderStyle(0)
+Gui.frmNewType.lblMethDesc.Create(Label,"Method Description",True,1380,195,0,150,660,True,0,"Tahoma",8.25,,0,0)
+Gui.frmNewType.lblMethDesc.BorderStyle(0)
+Gui.frmNewType.cmdSaveInspType.Create(Button)
+Gui.frmNewType.cmdSaveInspType.Enabled(True)
+Gui.frmNewType.cmdSaveInspType.Visible(True)
+Gui.frmNewType.cmdSaveInspType.Zorder(0)
+Gui.frmNewType.cmdSaveInspType.Size(1125,345)
+Gui.frmNewType.cmdSaveInspType.Position(2775,1155)
+Gui.frmNewType.cmdSaveInspType.Caption("Save")
+Gui.frmNewType.cmdSaveInspType.FontName("Tahoma")
+Gui.frmNewType.cmdSaveInspType.FontSize(8.25)
+Gui.frmNewType.cmdSaveInspType.Event(Click,cmdSaveInspType_Click)
+Gui.frmNewType.cmdSaveInspType.TabStop(True)
+Gui.frmNewType.cmdSaveInspType.TabIndex(3)
+Gui.frmNewType.txtMethod.Create(TextBox,"",True,4245,300,0,1785,210,True,0,"Tahoma",8.25,,1)
+Gui.frmNewType.txtMethod.TabStop(True)
+Gui.frmNewType.txtMethod.TabIndex(1)
+Gui.frmNewType.txtMethod.MaxLength(40)
+Gui.frmNewType.txtMethDesc.Create(TextBox,"",True,4245,300,0,1785,615,True,0,"Tahoma",8.25,,1)
+Gui.frmNewType.txtMethDesc.TabStop(True)
+Gui.frmNewType.txtMethDesc.TabIndex(2)
+Gui.frmNewType.txtMethDesc.MaxLength(60)
+Gui.frmNewMeasure..Create(BaseForm)
+Gui.frmNewMeasure..Caption("Add New Measure")
+Gui.frmNewMeasure..Size(6675,2220)
+Gui.frmNewMeasure..MinX(0)
+Gui.frmNewMeasure..MinY(0)
+Gui.frmNewMeasure..Position(0,0)
+Gui.frmNewMeasure..AlwaysOnTop(True)
+Gui.frmNewMeasure..FontName("Tahoma")
+Gui.frmNewMeasure..FontSize(8.25)
+Gui.frmNewMeasure..ControlBox(True)
+Gui.frmNewMeasure..MaxButton(True)
+Gui.frmNewMeasure..MinButton(True)
+Gui.frmNewMeasure..MousePointer(0)
+Gui.frmNewMeasure..Moveable(True)
+Gui.frmNewMeasure..Sizeable(True)
+Gui.frmNewMeasure..ShowInTaskBar(True)
+Gui.frmNewMeasure..TitleBar(True)
+Gui.frmNewMeasure..Event(UnLoad,frmNewMeasure_UnLoad)
+Gui.frmNewMeasure.lblMethod.Create(Label,"Method",True,540,195,0,990,105,True,0,"Tahoma",8.25,,0,0)
+Gui.frmNewMeasure.lblMethod.BorderStyle(0)
+Gui.frmNewMeasure.txtMethod.Create(TextBox,"",True,4845,300,0,1725,90,True,0,"Tahoma",8.25,,1)
+Gui.frmNewMeasure.txtMethod.TabStop(True)
+Gui.frmNewMeasure.txtMethod.TabIndex(1)
+Gui.frmNewMeasure.txtMethod.MaxLength(40)
+Gui.frmNewMeasure.lblUnits.Create(Label,"Units",True,360,195,0,1170,1185,True,0,"Tahoma",8.25,,0,0)
+Gui.frmNewMeasure.lblUnits.BorderStyle(0)
+Gui.frmNewMeasure.txtUnits.Create(TextBox,"",True,1500,300,0,1725,1095,True,0,"Tahoma",8.25,,1)
+Gui.frmNewMeasure.txtUnits.TabStop(True)
+Gui.frmNewMeasure.txtUnits.TabIndex(3)
+Gui.frmNewMeasure.txtUnits.MaxLength(10)
+Gui.frmNewMeasure.cmdSaveNewMeasure.Create(Button)
+Gui.frmNewMeasure.cmdSaveNewMeasure.Enabled(True)
+Gui.frmNewMeasure.cmdSaveNewMeasure.Visible(True)
+Gui.frmNewMeasure.cmdSaveNewMeasure.Zorder(0)
+Gui.frmNewMeasure.cmdSaveNewMeasure.Size(1200,390)
+Gui.frmNewMeasure.cmdSaveNewMeasure.Position(5310,1110)
+Gui.frmNewMeasure.cmdSaveNewMeasure.Caption("Save")
+Gui.frmNewMeasure.cmdSaveNewMeasure.FontName("Tahoma")
+Gui.frmNewMeasure.cmdSaveNewMeasure.FontSize(8.25)
+Gui.frmNewMeasure.cmdSaveNewMeasure.TabStop(True)
+Gui.frmNewMeasure.cmdSaveNewMeasure.TabIndex(4)
+Gui.frmNewMeasure.cmdSaveNewMeasure.Event(Click,cmdSaveNewMeasure_Click)
+Gui.frmNewMeasure.txtMethDesc.Create(TextBox,"",True,4845,300,0,1725,570,True,0,"Tahoma",8.25,,1)
+Gui.frmNewMeasure.txtMethDesc.TabStop(True)
+Gui.frmNewMeasure.txtMethDesc.TabIndex(2)
+Gui.frmNewMeasure.txtMethDesc.MaxLength(60)
+Gui.frmNewMeasure.lblMethDesc.Create(Label,"Method Description",True,1380,195,0,150,630,True,0,"Tahoma",8.25,,0,0)
+Gui.frmNewMeasure.lblMethDesc.BorderStyle(0)
+Gui.frmAddItem..Create(BaseForm)
+Gui.frmAddItem..Caption("New Item")
+Gui.frmAddItem..Size(11205,3840)
+Gui.frmAddItem..MinX(0)
+Gui.frmAddItem..MinY(0)
+Gui.frmAddItem..Position(0,0)
+Gui.frmAddItem..AlwaysOnTop(False)
+Gui.frmAddItem..FontName("Tahoma")
+Gui.frmAddItem..FontSize(8.25)
+Gui.frmAddItem..ControlBox(True)
+Gui.frmAddItem..MaxButton(True)
+Gui.frmAddItem..MinButton(True)
+Gui.frmAddItem..MousePointer(0)
+Gui.frmAddItem..Moveable(True)
+Gui.frmAddItem..Sizeable(False)
+Gui.frmAddItem..ShowInTaskBar(True)
+Gui.frmAddItem..TitleBar(True)
+Gui.frmAddItem..Event(UnLoad,frmAddItem_UnLoad)
+Gui.frmAddItem.cmdSaveNewItem.Create(Button)
+Gui.frmAddItem.cmdSaveNewItem.Enabled(True)
+Gui.frmAddItem.cmdSaveNewItem.Visible(True)
+Gui.frmAddItem.cmdSaveNewItem.Zorder(0)
+Gui.frmAddItem.cmdSaveNewItem.Size(1125,345)
+Gui.frmAddItem.cmdSaveNewItem.Position(1740,2790)
+Gui.frmAddItem.cmdSaveNewItem.Caption("Save")
+Gui.frmAddItem.cmdSaveNewItem.FontName("Tahoma")
+Gui.frmAddItem.cmdSaveNewItem.FontSize(8.25)
+Gui.frmAddItem.cmdSaveNewItem.Event(Click,cmdSaveNewItem_Click)
+Gui.frmAddItem.cmdSaveNewItem.TabStop(True)
+Gui.frmAddItem.cmdSaveNewItem.TabIndex(11)
+Gui.frmAddItem.cmdDelete.Create(Button)
+Gui.frmAddItem.cmdDelete.Enabled(True)
+Gui.frmAddItem.cmdDelete.Visible(True)
+Gui.frmAddItem.cmdDelete.Zorder(0)
+Gui.frmAddItem.cmdDelete.Size(1125,345)
+Gui.frmAddItem.cmdDelete.Position(420,2790)
+Gui.frmAddItem.cmdDelete.Caption("Delete")
+Gui.frmAddItem.cmdDelete.FontName("Tahoma")
+Gui.frmAddItem.cmdDelete.FontSize(8.25)
+Gui.frmAddItem.cmdDelete.Event(Click,cmdDelete_Click)
+Gui.frmAddItem.frameInspection_AddItem.Create(Frame)
+Gui.frmAddItem.frameInspection_AddItem.Enabled(True)
+Gui.frmAddItem.frameInspection_AddItem.Visible(True)
+Gui.frmAddItem.frameInspection_AddItem.Zorder(0)
+Gui.frmAddItem.frameInspection_AddItem.Size(4005,975)
+Gui.frmAddItem.frameInspection_AddItem.Position(90,390)
+Gui.frmAddItem.frameInspection_AddItem.Caption("")
+Gui.frmAddItem.frameInspection_AddItem.FontName("Tahoma")
+Gui.frmAddItem.frameInspection_AddItem.FontSize(8.25)
+Gui.frmAddItem.frameInspection_AddItem.BorderStyle(3)
+Gui.frmAddItem.ddlInspMethod.Create(DropDownList)
+Gui.frmAddItem.ddlInspMethod.Enabled(True)
+Gui.frmAddItem.ddlInspMethod.Visible(True)
+Gui.frmAddItem.ddlInspMethod.Zorder(0)
+Gui.frmAddItem.ddlInspMethod.Size(1800,300)
+Gui.frmAddItem.ddlInspMethod.Position(1590,60)
+Gui.frmAddItem.ddlInspMethod.FontName("Tahoma")
+Gui.frmAddItem.ddlInspMethod.FontSize(8.25)
+Gui.frmAddItem.ddlInspMethod.Event(Change,ddlInspMethod_Change)
+Gui.frmAddItem.ddlInspMethod.TabStop(True)
+Gui.frmAddItem.ddlInspMethod.TabIndex(1)
+Gui.frmAddItem.ddlInspMethod.Parent("frameInspection_AddItem")
+Gui.frmAddItem.txtInspMethDesc.Create(TextBox,"",True,2325,300,0,1590,480,False,0,"Tahoma",8.25,,1)
+Gui.frmAddItem.txtInspMethDesc.MaxLength(40)
+Gui.frmAddItem.txtInspMethDesc.Parent("frameInspection_AddItem")
+Gui.frmAddItem.lblInspMethDesc.Create(Label,"Method Description:",True,1440,195,0,90,540,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblInspMethDesc.BorderStyle(0)
+Gui.frmAddItem.lblInspMethDesc.Parent("frameInspection_AddItem")
+Gui.frmAddItem.lblInspMethod.Create(Label,"Method:",True,600,195,0,90,120,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblInspMethod.BorderStyle(0)
+Gui.frmAddItem.lblInspMethod.Parent("frameInspection_AddItem")
+Gui.frmAddItem.frameMeasure_AddItem.Create(Frame)
+Gui.frmAddItem.frameMeasure_AddItem.Enabled(True)
+Gui.frmAddItem.frameMeasure_AddItem.Visible(True)
+Gui.frmAddItem.frameMeasure_AddItem.Zorder(0)
+Gui.frmAddItem.frameMeasure_AddItem.Size(6660,2550)
+Gui.frmAddItem.frameMeasure_AddItem.Position(4305,420)
+Gui.frmAddItem.frameMeasure_AddItem.Caption("")
+Gui.frmAddItem.frameMeasure_AddItem.FontName("Tahoma")
+Gui.frmAddItem.frameMeasure_AddItem.FontSize(8.25)
+Gui.frmAddItem.frameMeasure_AddItem.BorderStyle(3)
+Gui.frmAddItem.txtExpRIRange.Create(TextBox,"",True,915,300,0,4200,2175,True,0,"Tahoma",8.25,,1)
+Gui.frmAddItem.txtExpRIRange.NumericOnly(1)
+Gui.frmAddItem.txtExpRIRange.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.txtExpRIRange.TabStop(True)
+Gui.frmAddItem.txtExpRIRange.TabIndex(9)
+Gui.frmAddItem.txtExpRINum.Create(TextBox,"",True,1500,300,0,1755,2175,True,0,"Tahoma",8.25,,1)
+Gui.frmAddItem.txtExpRINum.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.txtExpRINum.NumericOnly(1)
+Gui.frmAddItem.txtExpRINum.TabStop(True)
+Gui.frmAddItem.txtExpRINum.TabIndex(7)
+Gui.frmAddItem.txtExpRINum.Mask("########0.00")
+Gui.frmAddItem.lblExpRI.Create(Label,"Expected RI:",True,945,195,0,90,2235,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblExpRI.BorderStyle(0)
+Gui.frmAddItem.lblExpRI.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.lblFilmType.Create(Label,"Film Type:",True,735,195,0,90,990,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblFilmType.BorderStyle(0)
+Gui.frmAddItem.lblFilmType.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.lblUnit.Create(Label,"Unit:",True,345,195,0,3960,120,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblUnit.BorderStyle(0)
+Gui.frmAddItem.lblUnit.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.lblFilmTolerance.Create(Label,"Film Tolerance (%):",True,1410,195,0,90,1830,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblFilmTolerance.BorderStyle(0)
+Gui.frmAddItem.lblFilmTolerance.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.lblMeasureMethDesc.Create(Label,"Method Description:",True,1440,195,0,90,570,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblMeasureMethDesc.BorderStyle(0)
+Gui.frmAddItem.lblMeasureMethDesc.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.lblMin.Create(Label,"Min:",True,300,195,0,3765,1395,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblMin.BorderStyle(0)
+Gui.frmAddItem.lblMin.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.lblMeasureMethod.Create(Label,"Method:",True,600,195,0,90,120,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblMeasureMethod.BorderStyle(0)
+Gui.frmAddItem.lblMeasureMethod.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.ddlMeasureMethod.Create(DropDownList)
+Gui.frmAddItem.ddlMeasureMethod.Enabled(True)
+Gui.frmAddItem.ddlMeasureMethod.Visible(True)
+Gui.frmAddItem.ddlMeasureMethod.Zorder(0)
+Gui.frmAddItem.ddlMeasureMethod.Size(1800,300)
+Gui.frmAddItem.ddlMeasureMethod.Position(1755,60)
+Gui.frmAddItem.ddlMeasureMethod.FontName("Tahoma")
+Gui.frmAddItem.ddlMeasureMethod.FontSize(8.25)
+Gui.frmAddItem.ddlMeasureMethod.Event(Change,ddlMeasureMethod_Change)
+Gui.frmAddItem.ddlMeasureMethod.TabStop(True)
+Gui.frmAddItem.ddlMeasureMethod.TabIndex(2)
+Gui.frmAddItem.ddlMeasureMethod.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.ddlFilmType.Create(DropDownList)
+Gui.frmAddItem.ddlFilmType.Enabled(True)
+Gui.frmAddItem.ddlFilmType.Visible(True)
+Gui.frmAddItem.ddlFilmType.Zorder(0)
+Gui.frmAddItem.ddlFilmType.Size(1500,300)
+Gui.frmAddItem.ddlFilmType.Position(1755,930)
+Gui.frmAddItem.ddlFilmType.FontName("Tahoma")
+Gui.frmAddItem.ddlFilmType.FontSize(8.25)
+Gui.frmAddItem.ddlFilmType.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.ddlFilmType.TabStop(True)
+Gui.frmAddItem.ddlFilmType.TabIndex(4)
+Gui.frmAddItem.ddlOpSign.Create(DropDownList)
+Gui.frmAddItem.ddlOpSign.Enabled(True)
+Gui.frmAddItem.ddlOpSign.Visible(True)
+Gui.frmAddItem.ddlOpSign.Zorder(0)
+Gui.frmAddItem.ddlOpSign.Size(720,300)
+Gui.frmAddItem.ddlOpSign.Position(3345,2175)
+Gui.frmAddItem.ddlOpSign.FontName("Tahoma")
+Gui.frmAddItem.ddlOpSign.FontSize(8.25)
+Gui.frmAddItem.ddlOpSign.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.ddlOpSign.TabStop(True)
+Gui.frmAddItem.ddlOpSign.TabIndex(8)
+Gui.frmAddItem.txtMin.Create(TextBox,"",True,765,300,0,4200,1350,False,0,"Tahoma",8.25,,1)
+Gui.frmAddItem.txtMin.NumericOnly(1)
+Gui.frmAddItem.txtMin.MaxLength(9)
+Gui.frmAddItem.txtMin.TabStop(True)
+Gui.frmAddItem.txtMin.TabIndex(9)
+Gui.frmAddItem.txtMin.Mask("########0.0000")
+Gui.frmAddItem.txtMin.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.txtMeasureMethDesc.Create(TextBox,"",True,3330,300,0,1755,510,False,0,"Tahoma",8.25,,1)
+Gui.frmAddItem.txtMeasureMethDesc.MaxLength(40)
+Gui.frmAddItem.txtMeasureMethDesc.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.txtFilmTolerance.Create(TextBox,"",True,1500,300,0,1755,1770,True,0,"Tahoma",8.25,,1)
+Gui.frmAddItem.txtFilmTolerance.MaxLength(9)
+Gui.frmAddItem.txtFilmTolerance.NumericOnly(1)
+Gui.frmAddItem.txtFilmTolerance.TabStop(True)
+Gui.frmAddItem.txtFilmTolerance.TabIndex(6)
+Gui.frmAddItem.txtFilmTolerance.Mask("########0.00")
+Gui.frmAddItem.txtFilmTolerance.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.txtFilmTolerance.Event(Change,txtFilmTolerance_Change)
+Gui.frmAddItem.lblFilmTarget.Create(Label,"Film Target",True,795,195,0,90,1410,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblFilmTarget.BorderStyle(0)
+Gui.frmAddItem.lblFilmTarget.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.txtFilmTarget.Create(TextBox,"",True,1500,300,0,1755,1350,True,0,"Tahoma",8.25,,1)
+Gui.frmAddItem.txtFilmTarget.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.txtFilmTarget.NumericOnly(2)
+Gui.frmAddItem.txtFilmTarget.Event(Change,txtFilmTarget_Change)
+Gui.frmAddItem.txtFilmTarget.TabStop(True)
+Gui.frmAddItem.txtFilmTarget.TabIndex(5)
+Gui.frmAddItem.lblMax.Create(Label,"Max:",True,360,195,0,5145,1395,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblMax.BorderStyle(0)
+Gui.frmAddItem.lblMax.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.txtMax.Create(TextBox,"",True,765,300,0,5640,1350,False,0,"Tahoma",8.25,,1)
+Gui.frmAddItem.txtMax.NumericOnly(1)
+Gui.frmAddItem.txtMax.MaxLength(9)
+Gui.frmAddItem.txtMax.TabStop(True)
+Gui.frmAddItem.txtMax.TabIndex(10)
+Gui.frmAddItem.txtMax.Mask("########0.0000")
+Gui.frmAddItem.txtMax.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.txtUnit.Create(TextBox,"",True,1800,300,0,4515,60,True,0,"Tahoma",8.25,,1)
+Gui.frmAddItem.txtUnit.MaxLength(10)
+Gui.frmAddItem.txtUnit.TabStop(True)
+Gui.frmAddItem.txtUnit.TabIndex(3)
+Gui.frmAddItem.txtUnit.Parent("frameMeasure_AddItem")
+Gui.frmAddItem.lblMeasureTitle.Create(Label,"Measure",True,615,195,0,4305,105,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblMeasureTitle.BorderStyle(0)
+Gui.frmAddItem.lblInspectionTitle.Create(Label,"Inspection",True,750,195,0,120,105,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblInspectionTitle.BorderStyle(0)
+Gui.frmAddItem.lblInstructions.Create(Label,"Enter either an inspection or measure",True,2700,195,0,750,1650,True,0,"Tahoma",8.25,,0,0)
+Gui.frmAddItem.lblInstructions.BorderStyle(0)
+Program.Sub.ScreenSU.End
+Program.Sub.Preflight.Start
+V.Global.sGVInFocus.Declare
+V.Global.iRowIndex.Declare
+V.Global.sCalledFrom.Declare
+V.Global.sOrigValue.Declare
+V.Global.sMethodColumns.Declare
+V.Global.sInspTypeColumns.Declare
+V.Global.sKeySeq.Declare
+V.Global.sModifiedPriority.Declare
+V.Global.bWOPlanFound.Declare
+V.Global.bRouterHeader.Declare
+V.Global.sInspTypeComboBoxes.Declare
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+'Project: 7093: Record Test Results via SFDC, Export to Report.
+'Author: Brandon Medina 
+'Customer: Rogue Valley Microdevices
+'Quote: 13983-0
+'Description: This Script takes care of the Inspection Type Setup Screen launched off its own menu item,
+'and Inspection Plan Setup Screen, launched off the WO or Router Header 
+F.Intrinsic.Control.Try
+	F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+		'Set Script 1 button text in Router > Open screen
+		F.Intrinsic.Control.Case(11010)
+			'F.Intrinsic.Control.If(V.Caller.Switches, =, "O")
+				V.Passed.000201.Set("Insp Plan")
+'			F.Intrinsic.Control.Else
+'				F.Intrinsic.UI.ChangeCallerProperty(V.Passed.000201, "LOCK", 1)
+'				F.Intrinsic.Control.End
+'			F.Intrinsic.Control.EndIf
+			
+		'Script 1 ("Insp Plan") button is clicked from router header screen
+		F.Intrinsic.Control.Case(11120)
+			'Check for a selected router and open form if so
+			F.Intrinsic.Control.If(V.Passed.000014, =, "")
+				F.Intrinsic.UI.Msgbox("Please select a router.", "No Router Selected")
+			F.Intrinsic.Control.Else
+				F.ODBC.Connection!con.OpenCompanyConnection
+				F.Intrinsic.Control.CallSub(CreateTables)
+				F.Intrinsic.Control.CallSub(LoadDTPlan)
+			F.Intrinsic.Control.EndIf	
+			
+		'WO Header Populate Hook: Shop Floor Control > View > Work Orders 
+		F.Intrinsic.Control.Case(13580)	
+			'Script 1 Label
+			V.Passed.000057.Set("Insp Plan")
+		'Script 1 Hook Shop Floor Control > View > Work Orders
+		F.Intrinsic.Control.Case(13620)
+			'Look for existing insp plan for WO 
+			F.ODBC.Connection!con.OpenCompanyConnection
+			F.Intrinsic.Control.CallSub(CreateTables)
+			F.Intrinsic.Control.CallSub(LoadDTPlan)
+		F.Intrinsic.Control.CaseElse
+			'Launch Inspection Type Setup Screen
+			F.ODBC.Connection!con.OpenCompanyConnection
+			F.Intrinsic.Control.CallSub(CreateTables)
+			F.Intrinsic.Control.CallSub(ContextMenusInspType)
+			F.Intrinsic.Control.CallSub(LoadDTInspTypeSetup)
+			Gui.frmInspType..Show
+	F.Intrinsic.Control.EndSelect
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.Main.End
+'Inspection Plan Screens (WO & Router Header)
+Program.Sub.LoadDTPlan.Start
+F.Intrinsic.Control.Try
+
+	V.Local.sSql.Declare(String)
+	V.Local.sSeq.Declare(String)
+	V.Local.sRouter.Declare(String)
+	V.Local.sRev.Declare(String)
+	V.Local.sWO.Declare
+	V.Local.sSuffix.Declare
+	V.Local.sMsg.Declare
+	V.Local.bNewRouterPlan.Declare
+	V.Local.bEditRouterPlan.Declare
+	V.Local.sRet.Declare
+
+	'
+	'Determine which hook called screen. WO header or Router Header 
+	F.Intrinsic.Control.SelectCase(V.Caller.Hook)
+		'Router Header 
+		F.Intrinsic.Control.Case(11120)
+			'Grab current router (and REV if one exists) number and set to field
+			
+			'V.Local.sWO.Set(V.Passed.000001.Left6)
+			'V.Local.sSuffix.Set(V.Passed.000001.Right3)
+			V.Local.sRouter.Set(V.Passed.000014)
+			V.Local.sRev.Set(V.Passed.000015)
+			V.Global.bRouterHeader.Set(True)
+			Gui.frmInspPlan.txtWO.Visible(False)
+			Gui.frmInspPlan.txtSuffix.Visible(False)
+			Gui.frmInspPlan.lblWO.Visible(False)
+			Gui.frmInspPlan.lblSuffix.Visible(False)
+		'WO Header 
+		F.Intrinsic.Control.Case(13620)
+			'Grab current WO number and router
+			V.Local.sWO.Set(V.Passed.000001.Left6)
+			V.Local.sSuffix.Set(V.Passed.000001.Right3)
+			V.Local.sRouter.Set(V.Passed.000021)
+			V.Local.sRev.Set(V.Passed.000014)
+			Gui.frmInspPlan.txtWO.Visible(True)
+			Gui.frmInspPlan.txtSuffix.Visible(True)
+			Gui.frmInspPlan.lblWO.Visible(True)
+			Gui.frmInspPlan.lblSuffix.Visible(True)
+			Gui.frmInspPlan.txtWO.Text(V.Local.sWO)
+			Gui.frmInspPlan.txtSuffix.Text(V.Local.sSuffix)
+	F.Intrinsic.Control.EndSelect
+
+	'Ensure datatable does not exist before recreating
+	F.Intrinsic.Control.If(V.DataTable.dtPlan.Exists)
+		F.Data.DataTable.Close("dtPlan")
+	F.Intrinsic.Control.EndIf
+		
+	F.Intrinsic.String.RPad(V.Local.sRouter.Trim, " ", 17, V.Local.sRouter)
+	F.Intrinsic.String.Build("{0}{1}", V.Local.sRouter, V.Local.sRev, V.Local.sRouter)
+	Gui.frmInspPlan.txtRouter.Text(V.Local.sRouter.Trim)
+	'This will be blank when the screen initially loads. Delimit by :: as description was addded to the ddl
+	V.Local.sSeq.Redim(0,0)
+	V.Local.sSeq.Set(V.Screen.frmInspPlan!ddlSequences.Text)
+	F.Intrinsic.String.Split(V.Local.sSeq, "::", V.Local.sSeq)
+	'See if exisiting plan exists for WO, if not then grab the router plan 
+	
+	'Remove Scribe Check from the table. It is on the rtr sequence
+	'F.Intrinsic.String.Build("Select RTRIM(KEY_SEQUENCE) as KEY_SEQUENCE, RTRIM(PRIORITY) as PRIORITY, RTRIM(RTR_SEQ) as SEQUENCE,  RTRIM(INSP_METHOD) as INSPECTION_METHOD, RTRIM(INSP_METHOD_DESC) as INSP_METHOD_DESC, RTRIM(MEASURE_METHOD) as MEASURE_METHOD, RTRIM(MEASURE_METHOD_DESC) as MEASURE_METHOD_DESC, RTRIM(FILM_TYPE) AS FILM_TYPE, RTRIM(FILM_TARGET) as FILM_TARGET, RTRIM(FILM_TOLERANCE) AS FILM_TOLERANCE, EXPECTED_RI, RTRIM(EXPECTED_RI_OPERATOR) as EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, RTRIM(UNIT) as UNIT, MEASURE_MIN, MEASURE_MAX, SCRIBE_CHECK from GCG_7093_INSP_PLAN where RTRIM(JOB) = '{0}' and RTRIM(SUFFIX) = '{1}' and RTRIM(ROUTER) = '{2}' and SEQUENCE = '{3}'  order by PRIORITY", V.Local.sWO, V.Local.sSuffix, V.Local.sRouter, V.Local.sSeq, V.Local.sSql)
+	F.Intrinsic.String.Build("Select RTRIM(KEY_SEQUENCE) as KEY_SEQUENCE, RTRIM(PRIORITY) as PRIORITY, RTRIM(RTR_SEQ) as SEQUENCE,  RTRIM(INSP_METHOD) as INSPECTION_METHOD, RTRIM(INSP_METHOD_DESC) as INSP_METHOD_DESC, RTRIM(MEASURE_METHOD) as MEASURE_METHOD, RTRIM(MEASURE_METHOD_DESC) as MEASURE_METHOD_DESC, RTRIM(FILM_TYPE) AS FILM_TYPE, RTRIM(FILM_TARGET) as FILM_TARGET, RTRIM(FILM_TOLERANCE) AS FILM_TOLERANCE, EXPECTED_RI, RTRIM(EXPECTED_RI_OPERATOR) as EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, RTRIM(UNIT) as UNIT, MEASURE_MIN, MEASURE_MAX from GCG_7093_INSP_PLAN where RTRIM(JOB) = '{0}' and RTRIM(SUFFIX) = '{1}' and RTRIM(ROUTER) = '{2}' and SEQUENCE = '{3}'  order by PRIORITY", V.Local.sWO, V.Local.sSuffix, V.Local.sRouter, V.Local.sSeq, V.Local.sSql)
+	F.Data.DataTable.CreateFromSQL("dtPlan", "con", V.Local.sSql, True)
+	
+	F.Intrinsic.Control.If(V.DataTable.dtPlan.RowCount, =, 0)
+		F.Data.DataTable.Close("dtPlan")
+		
+		'F.Intrinsic.String.Build("Select RTRIM(KEY_SEQUENCE) as KEY_SEQUENCE, RTRIM(PRIORITY) as PRIORITY, RTRIM(RTR_SEQ) as SEQUENCE,  RTRIM(INSP_METHOD) as INSPECTION_METHOD, RTRIM(INSP_METHOD_DESC) as INSP_METHOD_DESC, RTRIM(MEASURE_METHOD) as MEASURE_METHOD, RTRIM(MEASURE_METHOD_DESC) as MEASURE_METHOD_DESC, RTRIM(FILM_TYPE) AS FILM_TYPE, RTRIM(FILM_TARGET) as FILM_TARGET, RTRIM(FILM_TOLERANCE) AS FILM_TOLERANCE, EXPECTED_RI, RTRIM(EXPECTED_RI_OPERATOR) as EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, RTRIM(UNIT) as UNIT, MEASURE_MIN, MEASURE_MAX, SCRIBE_CHECK from GCG_7093_INSP_PLAN where RTRIM(ROUTER) = '{0}' and SEQUENCE = '{1}' and JOB is null and SUFFIX is null order by PRIORITY", V.Local.sRouter,  V.Local.sSeq, V.Local.sSql)
+		F.Intrinsic.String.Build("Select RTRIM(KEY_SEQUENCE) as KEY_SEQUENCE, RTRIM(PRIORITY) as PRIORITY, RTRIM(RTR_SEQ) as SEQUENCE,  RTRIM(INSP_METHOD) as INSPECTION_METHOD, RTRIM(INSP_METHOD_DESC) as INSP_METHOD_DESC, RTRIM(MEASURE_METHOD) as MEASURE_METHOD, RTRIM(MEASURE_METHOD_DESC) as MEASURE_METHOD_DESC, RTRIM(FILM_TYPE) AS FILM_TYPE, RTRIM(FILM_TARGET) as FILM_TARGET, RTRIM(FILM_TOLERANCE) AS FILM_TOLERANCE, EXPECTED_RI, RTRIM(EXPECTED_RI_OPERATOR) as EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, RTRIM(UNIT) as UNIT, MEASURE_MIN, MEASURE_MAX from GCG_7093_INSP_PLAN where RTRIM(ROUTER) = '{0}' and SEQUENCE = '{1}' and JOB is null and SUFFIX is null order by PRIORITY", V.Local.sRouter,  V.Local.sSeq, V.Local.sSql)
+		
+		F.Data.DataTable.CreateFromSQL("dtPlan", "con", V.Local.sSql, True)  
+		'Means opening for first time from WO Header. Skip error check. When sequence is selected, it will check if a Router plan exists for the WO. If not then will error on the following line 
+		F.Intrinsic.Control.If(V.Local.sSeq, =, "", AND, V.Global.bRouterHeader, =, False)
+			F.Intrinsic.Control.GoTo("NOWO")
+		F.Intrinsic.Control.EndIf
+		
+	
+		F.Intrinsic.Control.If(V.DataTable.dtPlan.RowCount, =, 0, AND, V.Global.bRouterHeader, =, False)
+			F.Intrinsic.String.Build("No Inspection Plan found for sequence: {4} for either WO: {0}-{1} or Router: {2}.{3}Please set up a default router plan in the Router Header Screen.", V.Local.sWO, V.Local.sSuffix, V.Local.sRouter, V.Ambient.NewLine, V.Local.sSeq, V.Local.sMsg)
+			F.Intrinsic.UI.Msgbox(V.Local.sMsg, "No Inspection Plan Found")
+			F.Intrinsic.Control.End
+		F.Intrinsic.Control.ElseIf(V.DataTable.dtPlan.RowCount, =, 0, AND, V.Global.bRouterHeader, =, True)
+			'Creating New Router Header plan. Boolean doesn't actually get used anywhere
+			Gui.frmInspPlan.chkScribe.Enabled(False)
+			V.Local.bNewRouterPlan.Set(True)
+		F.Intrinsic.Control.ElseIf(V.DataTable.dtPlan.RowCount, <>, 0, AND, V.Global.bRouterHeader, =, True)
+			'Editing exisiting Router header Plan. Boolean doesn't actually get used anywhere
+			V.Local.bEditRouterPlan.Set(True)
+			Gui.frmInspPlan.chkScribe.Enabled(True)
+		F.Intrinsic.Control.Else
+			'No WO Plan found, bring in router plan 
+			F.Intrinsic.String.Build("No Inspection Plan Found for sequence: {4} WO: {0}-{1}. {2}Populating with Plan from Router: {3}.", V.Local.sWO, V.Local.sSuffix, V.Ambient.NewLine, V.Local.sRouter, V.Local.sSeq, V.Local.sMsg)
+			F.Intrinsic.UI.Msgbox(V.Local.sMsg, "Using Router Inspection Plan")
+			F.Intrinsic.Control.Label("NOWO")
+			V.Global.bWOPlanFound.Set(False)
+			Gui.frmInspPlan.chkScribe.Enabled(True)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		V.Global.bWOPlanFound.Set(True)
+		Gui.frmInspPlan.chkScribe.Enabled(True)
+	F.Intrinsic.Control.EndIf
+	
+	'Add columns for priority increase/decrease and edit buttons
+	F.Data.DataTable.AddColumn("dtPlan", "UP", "String")
+	F.Data.DataTable.AddColumn("dtPlan", "DOWN", "String")
+	F.Data.DataTable.AddColumn("dtPlan", "EDIT", "String")
+	
+	'Add columns for filling Router, Rtr sequence, WO and suffix data in the cmdSaveNewItem_Click subroutine. Only filled if project called from WO header 
+	F.Data.DataTable.AddColumn("dtPlan", "JOB", "String")
+	F.Data.DataTable.AddColumn("dtPlan", "SUFFIX", "String")
+	F.Data.DataTable.AddColumn("dtPlan", "ROUTER", "String")
+	F.Data.DataTable.AddColumn("dtPlan", "RTR_SEQ", "String")
+	
+	'Clear items from dropdownlist to avoid duplication and repopulate with LMO = L sequences
+	Gui.frmInspPlan.ddlSequences.ClearItems
+	F.Intrinsic.String.Build("select LINE_ROUTER as DDINDEX, LINE_ROUTER + '::' + DESC_RT_LINE as Description2 from V_ROUTER_LINE where RTRIM(ROUTER) = '{0}' and LMO = 'L' order by DDINDEX", V.Local.sRouter, V.Local.sSql)
+	F.Data.Dictionary.CreateFromSQL("dictSeqs", "con", V.Local.sSql)
+	Gui.frmInspPlan.ddlSequences.AddItems("Dictionary", "dictSeqs")
+	F.Data.Dictionary.Close("dictSeqs")
+	
+	'Set checkbox state for scribe check
+	F.Intrinsic.String.Build("select rtrim(ltrim(coalesce(JOB, ''))) + rtrim(ltrim(coalesce(SUFFIX, ''))) + rtrim(ltrim(ROUTER)) + rtrim(ltrim(RTR_SEQ)) as MATCH, SCRIBE_CHECK from GCG_7093_SCRIBE where rtrim(JOB) = '{0}' and rtrim(SUFFIX) = '{1}' and rtrim(ROUTER) = '{2}' and rtrim(RTR_SEQ) = '{3}'", V.Local.sWO, V.Local.sSuffix, V.Local.sRouter, V.Local.sSeq, V.Local.sSql)
+	F.Data.DataTable.CreateFromSQL("dtScribeChk", "con", V.Local.sSql)
+	
+	F.Intrinsic.Control.BlockEvents
+	'Seq is not in the table so reset to false
+	F.Intrinsic.Control.If(V.DataTable.dtScribeChk.RowCount, =, 0)
+		Gui.frmInspPlan.chkScribe.Value(False)
+		'V.Global.bUpdateScribe.Set(False)
+	'Seq is in table w/ true value. Set that, and set to run update query later on
+	F.Intrinsic.Control.ElseIf(V.DataTable.dtScribeChk(0).SCRIBE_CHECK!FieldVal, =, "1")
+		Gui.frmInspPlan.chkScribe.Value(True)
+		'V.Global.bUpdateScribe.Set(True)
+	F.Intrinsic.Control.Else
+	 'Otherwise it does exist and is marked as false
+		Gui.frmInspPlan.chkScribe.Value(False)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.UnBlockEvents
+	F.Data.DataTable.Close("dtScribeChk")
+	
+	
+	'
+	'Call sub to format gridview and show form
+	F.Intrinsic.Control.CallSub(LoadGVPlan, "DT", "dtPlan", "GV", "gvRouterPlan", "GSGC", "GSGC_InspPlan", "FRM", "frmInspPlan")
+	
+	Gui.frmInspPlan..Show
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadDTPlan.End
+Program.Sub.LoadGVPlan.Start
+F.Intrinsic.Control.Try
+	V.Local.sFieldNames.Declare
+	V.Local.sColumns.Declare
+	V.Local.bRet.Declare
+	V.Local.sFormattedCaption.Declare
+	V.Local.iVisibleIndex.Declare(Long)
+	V.Local.sFRM.Declare
+	V.Local.sGSGC.Declare
+	V.Local.sGV.Declare
+	V.Local.sDT.Declare
+	V.Local.iCnt.Declare
+	V.Local.sSQL.Declare
+	V.Local.sListItems.Declare
+
+	'Load datatable into gridview and start formatting
+	Gui.[V.Args.FRM].[V.Args.GSGC].AddGridViewFromDataTable(V.Args.GV,V.Args.DT)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SuspendLayout()
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridViewProperty(V.Args.GV,"AllowSort",True)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridViewProperty(V.Args.GV,"AllowFilter",True)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridViewProperty(V.Args.GV,"OptionsViewShowGroupPanel",True)
+
+'Format GridView properties
+
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridviewProperty(V.Args.GV,  V.Enum.GridViewPropertyNames!ColumnAutoWidth, True)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridviewProperty(V.Args.GV, V.Enum.GridViewPropertyNames!ShowDetailTabs, False)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridviewProperty(V.Args.GV, V.Enum.GridViewPropertyNames!ShowDetailTabs, False)
+
+	'Ensure grid is sorted by PRIORITY
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV, "PRIORITY", "SortOrder", "Ascending")
+	
+	'Loop through columns names by using the V.DataTable.dtName.FieldNames
+	'F.Intrinsic.String.Concat("",V.DataTable.[V.Args.DT].FieldNames,V.Local.sFieldNames)
+	V.Local.sFieldNames.Set(V.DataTable.[V.Args.DT].FieldNames)
+	F.Intrinsic.String.Split(V.Local.sFieldNames,"*!*",V.Local.sColumns)
+	
+	F.Intrinsic.Control.For(V.Local.iCnt, 0, V.Local.sColumns.UBound, 1)
+		'Caption Formatting...  returns V.Args.sFromattedCaption with the formatted caption
+		F.Intrinsic.Control.CallSub(FormatCaption,"sCaption",V.Local.sColumns(V.Local.iCnt))
+		
+		'Main Properties
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"VisibleIndex",V.Local.iCnt)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"HeaderFontBold",True)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"HeaderHAlignment","Center")
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"CellHAlignment","Center")
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"ReadOnly",True)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowEdit",False)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"Caption",V.Args.sFormattedCaption)
+		
+		F.Intrinsic.Control.If(V.Local.sColumns(V.Local.iCnt), <>, "EDIT")
+			Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowFilter", False)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowSort", False)
+		F.Intrinsic.Control.EndIf
+		
+		'Set Column Buttons and a few specific properties 
+		F.Intrinsic.Control.SelectCase(V.Local.sColumns(V.Local.iCnt))
+			F.Intrinsic.Control.Case("UP")
+				Gui.[V.Args.FRM].[V.Args.GSGC].ColumnEdit(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"EditorButton", "+")
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"ShowCaption", False)
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowShowHide", False)
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowMove", False)
+			F.Intrinsic.Control.Case("DOWN")
+				Gui.[V.Args.FRM].[V.Args.GSGC].ColumnEdit(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"EditorButton", "-")
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"ShowCaption", False)
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowShowHide", False)
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowMove", False)
+			F.Intrinsic.Control.Case("EDIT")
+				Gui.[V.Args.FRM].[V.Args.GSGC].ColumnEdit(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"EditorButton", "EDIT")
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"ShowCaption", False)
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowShowHide", False)
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowMove", False)
+			'F.Intrinsic.Control.Case("INSP_TYPE")
+'				F.ODBC.Connection!con.OpenCompanyConnection
+'				F.ODBC.Connection!con.ExecuteAndReturn("select INSP_TYPE from GCG_7093_INSP_TYPES", V.Local.sListItems)
+'				F.Intrinsic.String.Replace(V.Local.sListItems, "#$#", "*!*", V.Local.sListItems)
+'				Gui.[V.Args.FRM].[V.Args.GSGC].ColumnEdit(V.Args.GV, V.Local.sColumns(V.Local.iCnt), "DropDownList", V.Local.sListItems)
+'				F.ODBC.Connection!con.Close
+			'F.Intrinsic.Control.Case("METHOD")
+'				F.ODBC.Connection!con.OpenCompanyConnection
+'				F.ODBC.Connection!con.ExecuteAndReturn("select METHOD from GCG_7093_METHODS", V.Local.sListItems)
+'				F.Intrinsic.String.Replace(V.Local.sListItems, "#$#", "*!*", V.Local.sListItems)
+'				Gui.[V.Args.FRM].[V.Args.GSGC].ColumnEdit(V.Args.GV, V.Local.sColumns(V.Local.iCnt), "DropDownList", V.Local.sListItems)
+'				F.ODBC.Connection!con.Close
+			F.Intrinsic.Control.CaseAny("KEY_SEQUENCE", "JOB", "SUFFIX", "ROUTER", "RTR_SEQ")
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"Visible", False)
+		F.Intrinsic.Control.EndSelect
+				
+		'Checks if abcd is present in name, if so then make it invisible and strip away those characters 	
+		F.Intrinsic.String.IsInString(V.Args.sFormattedCaption, "abcd", False, V.Local.bRet)
+		F.Intrinsic.Control.If(V.Local.bRet)
+			Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"Visible", False)
+			F.Intrinsic.String.Replace(V.Args.sFormattedCaption, "abcd", "", V.Local.sFormattedCaption)
+			Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"Caption", V.Local.sFormattedCaption)
+		F.Intrinsic.Control.EndIf
+				
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	Gui.[V.Args.FRM].[V.Args.GSGC].BestFitColumns(V.Args.GV)
+	Gui.[V.Args.FRM].[V.Args.GSGC].ResumeLayout()
+	Gui.[V.Args.FRM].[V.Args.GSGC].MainView(V.Args.GV)
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadGVPlan.End
+Program.Sub.FormatCaption.Start
+F.Intrinsic.Control.Try
+	'Sub just removes underscores of captions passed to it and makes columns proper case. Returns RV where formatted 
+	V.Local.sRet.Declare
+	
+	V.Local.sRet.Set(V.Args.sCaption)
+	
+	F.Intrinsic.String.Replace(V.Local.sRet,"_"," ",V.Local.sRet)
+	
+	
+	F.Intrinsic.Control.If(V.Local.sRet.Length,>,2)
+		V.Local.sRet.Set(V.Local.sRet.PCase)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Variable.AddRV("sFormattedCaption",V.Local.sRet)
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.FormatCaption.End
+Program.Sub.RefreshGrid.Start
+F.Intrinsic.Control.Try
+	Gui.frmInspPlan.GSGC_InspPlan.Visible(False)
+	F.Intrinsic.Control.CallSub(LoadDTPlan)
+	Gui.frmInspPlan.GSGC_InspPlan.Visible(True)
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.RefreshGrid.End
+Program.Sub.ErrorMsg.Start
+V.Local.sError.Declare
+
+'F.Intrinsic.Control.If(V.Global.bConOpen)
+'	F.ODBC.Connection!con.Close
+'	V.Global.bConOpen.Set(False)
+'F.Intrinsic.Control.EndIf	
+
+'Generic Error message.
+F.Intrinsic.String.Build("Project: {0}{1}{1}Subroutine: {2}{1}Error Occurred {3} with description {4}{1}{1}GAB Version: {5}",V.Caller.ScriptFile , V.Ambient.Newline, V.Args.CurrentSub,V.Ambient.ErrorNumber,V.Ambient.ErrorDescription,V.Ambient.GABVersion,V.Local.sError)
+f.Intrinsic.UI.Msgbox(v.Local.sError)
+Program.Sub.ErrorMsg.End
+Program.Sub.ddlSequences_Change.Start
+F.Intrinsic.Control.Try
+	F.Intrinsic.Control.CallSub(RefreshGrid)
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.ddlSequences_Change.End
+Program.Sub.frmInspPlan_UnLoad.Start
+F.Intrinsic.Control.Try
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.frmInspPlan_UnLoad.End
+Program.Sub.GSGC_InspPlan_RowCellClick.Start
+F.Intrinsic.Control.Try
+	V.Local.sKeySeq.Declare(String)
+	V.Local.fPriority.Declare(Float)
+	V.Local.sSelect.Declare(String)
+	V.Local.iRowIndex.Declare(Long)
+	V.Local.sDTRet.Declare(String)
+	V.Local.iOtherRowIndex.Declare(Long)
+	V.Local.iOtherSort.Declare(Long)
+	V.Local.iTemp.Declare(Long)
+	V.Local.sPriority.Declare(String)
+	V.Local.sOtherSort.Declare(String)
+	V.Local.iIndex.Declare(Long)
+	V.Local.sInspTypes.Declare
+	V.Local.sMethods.Declare
+	V.Local.i.Declare
+	
+'Function.Intrinsic.Debug.InvokeDebugger
+'			Function.Intrinsic.Debug.Stop
+			
+	F.Intrinsic.Control.SelectCase(V.Args.Column)
+	
+		F.Intrinsic.Control.Case("EDIT")
+		
+			'Populate Inspection types and methods dropdownlists
+			F.Intrinsic.Control.CallSub(PopulateAddItemDropDowns)
+		
+			'Capture selected index
+			V.Global.iRowIndex.Set(V.Args.RowIndex)
+			
+			'Set all corresponding values on form
+			'F.Intrinsic.Control.If(V.Datatable.dtPlan(V.Global.iRowIndex).PASS_FAIL!FieldValTrim, =, "YES")
+'			F.Intrinsic.Control.If(V.Datatable.dtPlan(V.Global.iRowIndex).SCRIBE_CHECK!FieldVal, =, True)
+'				gui.frmInspPlan.chkScribe.Value(1)
+'			F.Intrinsic.Control.Else
+'				gui.frmInspPlan.chkScribe.Value(0)
+'			F.Intrinsic.Control.EndIf
+			
+			GUI.frmAddItem.txtUnit.Text(V.Datatable.dtPlan(V.Global.iRowIndex).UNIT!FieldValTrim)
+			gui.frmAddItem.ddlInspMethod.Text(V.Datatable.dtPlan(V.Global.iRowIndex).INSPECTION_METHOD!FieldValTrim)
+			gui.frmAddItem.txtInspMethDesc.Text(V.Datatable.dtPlan(V.Global.iRowIndex).INSP_METHOD_DESC!FieldValTrim)
+			gui.frmAddItem.ddlMeasureMethod.Text(V.Datatable.dtPlan(V.Global.iRowIndex).MEASURE_METHOD!FieldValTrim)
+			gui.frmAddItem.txtMeasureMethDesc.Text(V.Datatable.dtPlan(V.Global.iRowIndex).MEASURE_METHOD_DESC!FieldValTrim)
+			gui.frmAddItem.ddlFilmType.Text(V.Datatable.dtPlan(V.Global.iRowIndex).FILM_TYPE!FieldValTrim)
+			'When saving blank records for these numeric fields, it saves as 0s. Want this to be blank so it doesn't trigger an error in the save check subroutine
+			F.Intrinsic.Control.If(V.DataTable.dtPlan(V.Global.iRowIndex).FILM_TARGET!FieldValTrim, <>, "0")
+				Gui.frmAddItem.txtFilmTarget.Text(V.DataTable.dtPlan(V.Global.iRowIndex).FILM_TARGET!FieldValTrim)
+			F.Intrinsic.Control.Else
+				Gui.frmAddItem.txtFilmTarget.Text("")
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.If(V.Datatable.dtPlan(V.Global.iRowIndex).FILM_TOLERANCE!FieldValTrim, <>, "0.00")
+				gui.frmAddItem.txtFilmTolerance.Text(V.Datatable.dtPlan(V.Global.iRowIndex).FILM_TOLERANCE!FieldValTrim)
+			F.Intrinsic.Control.Else
+				gui.frmAddItem.txtFilmTolerance.Text("")
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.If(V.Datatable.dtPlan(V.Global.iRowIndex).EXPECTED_RI!FieldValTrim, <>, "0.00")
+				gui.frmAddItem.txtExpRINum.Text(V.Datatable.dtPlan(V.Global.iRowIndex).EXPECTED_RI!FieldValTrim)
+			F.Intrinsic.Control.Else
+				gui.frmAddItem.txtExpRINum.Text("")
+			F.Intrinsic.Control.EndIf
+			gui.frmAddItem.ddlOpSign.Text(V.Datatable.dtPlan(V.Global.iRowIndex).EXPECTED_RI_OPERATOR!FieldValTrim)
+			F.Intrinsic.Control.If(V.Datatable.dtPlan(V.Global.iRowIndex).EXPECTED_RI_RANGE!FieldValTrim, <>, "0.00")
+				gui.frmAddItem.txtExpRIRange.Text(V.Datatable.dtPlan(V.Global.iRowIndex).EXPECTED_RI_RANGE!FieldValTrim)
+			F.Intrinsic.Control.Else
+				gui.frmAddItem.txtExpRIRange.Text("")
+			F.Intrinsic.Control.EndIf
+			GUI.frmAddItem.txtMin.Text(V.Datatable.dtPlan(V.Global.iRowIndex).MEASURE_MIN!FieldValTrim)
+			GUI.frmAddItem.txtMax.Text(V.Datatable.dtPlan(V.Global.iRowIndex).MEASURE_MAX!FieldValTrim)
+			
+			
+			'Show DELETE and SAVE EDIT buttons and show form for edit
+			GUI.frmAddItem.cmdSaveNewItem.Caption("Save Edit")
+			GUI.frmAddItem.cmdDelete.Visible(True)
+			GUI.frmAddItem..Show
+	
+		F.Intrinsic.Control.Case("UP")
+		
+			'Disable form and block events to avoid triggering process while a previous is still running
+			GUI.frmInspPlan.GSGC_InspPlan.Enabled(False)
+			F.Intrinsic.Control.BlockEvents()
+			
+			V.Local.iRowIndex.Set(V.Args.RowIndex)
+			V.Local.sPriority.Set(V.DataTable.dtPlan(V.Local.iRowIndex).PRIORITY!FieldValLong)
+					
+			'Get previous row
+			F.Intrinsic.String.Build("PRIORITY < {0}", V.Local.sPriority, V.Local.sSelect)
+			F.Data.DataTable.Select("dtPlan", V.Local.sSelect, V.Local.sDTRet)
+			
+			F.Intrinsic.Control.If(V.Local.sDTRet.IsNoReturn)
+				GUI.frmInspPlan.GSGC_InspPlan.Enabled(True)
+				F.Intrinsic.Control.UnblockEvents()
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Split(V.Local.sDTRet, "*!*", V.Local.sDTRet)
+			V.Local.iOtherRowIndex.Set(V.Local.sDTRet(V.Local.sDTRet.UBound))
+			V.Local.iOtherSort.Set(V.DataTable.dtPlan(V.Local.iOtherRowIndex).PRIORITY!FieldValLong)
+			
+			'swap
+			V.Local.iTemp.Set(V.Local.sPriority)
+			V.Local.sPriority.Set(V.Local.iOtherSort)
+			V.Local.iOtherSort.Set(V.Local.iTemp)
+			
+			'Format swapped priorities as strings to save back into dtPlan
+			F.Intrinsic.String.Format(V.Local.sPriority, "000", V.Local.sPriority)
+			F.Intrinsic.String.Format(V.Local.iOtherSort, "000", V.Local.sOtherSort)
+		
+			F.Data.DataTable.SetValue("dtPlan", V.Local.iRowIndex, "PRIORITY", V.Local.sPriority)
+			F.Data.DataTable.SetValue("dtPlan", V.Local.iOtherRowIndex, "PRIORITY", V.Local.sOtherSort)
+			
+			F.Intrinsic.Control.CallSub(AddModifiedWC, "KEY_SEQUENCE", V.DataTable.dtPlan(V.Local.iRowIndex).KEY_SEQUENCE!FieldValTrim)
+			F.Intrinsic.Control.CallSub(AddModifiedWC, "KEY_SEQUENCE", V.DataTable.dtPlan(V.Local.iOtherRowIndex).KEY_SEQUENCE!FieldValTrim)
+			F.Intrinsic.Control.CallSub(SaveModifiedWCSort)
+			
+			'Re-enable form and unblock events 
+			GUI.frmInspPlan.GSGC_InspPlan.Enabled(True)
+			F.Intrinsic.Control.UnblockEvents()
+			
+	 	F.Intrinsic.Control.Case("DOWN")
+			
+			'Disable form and block events to avoid triggering process while a previous is still running
+			GUI.frmInspPlan.GSGC_InspPlan.Enabled(False)
+			F.Intrinsic.Control.BlockEvents()
+	
+			V.Local.iRowIndex.Set(V.Args.RowIndex)
+			V.Local.sPriority.Set(V.DataTable.dtPlan(V.Local.iRowIndex).PRIORITY!FieldValLong)
+					
+			'Get next row
+			F.Intrinsic.String.Build("PRIORITY > {0}", V.Local.sPriority, V.Local.sSelect)
+			F.Data.DataTable.Select("dtPlan", V.Local.sSelect, V.Local.sDTRet)
+			
+			F.Intrinsic.Control.If(V.Local.sDTRet.IsNoReturn)
+				GUI.frmInspPlan.GSGC_InspPlan.Enabled(True)
+				F.Intrinsic.Control.UnblockEvents()
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.String.Split(V.Local.sDTRet, "*!*", V.Local.sDTRet)
+			V.Local.iOtherRowIndex.Set(V.Local.sDTRet(0))
+			V.Local.iOtherSort.Set(V.DataTable.dtPlan(V.Local.iOtherRowIndex).PRIORITY!FieldValLong)
+			
+			'Swap
+			V.Local.iTemp.Set(V.Local.sPriority)
+			V.Local.sPriority.Set(V.Local.iOtherSort)
+			V.Local.iOtherSort.Set(V.Local.iTemp)
+			
+			'Format swapped priorities as strings to save back into dtPlan
+			F.Intrinsic.String.Format(V.Local.sPriority, "000", V.Local.sPriority)
+			F.Intrinsic.String.Format(V.Local.iOtherSort, "000", V.Local.sOtherSort)
+		
+			F.Data.DataTable.SetValue("dtPlan", V.Local.iRowIndex, "PRIORITY", V.Local.sPriority)
+			F.Data.DataTable.SetValue("dtPlan", V.Local.iOtherRowIndex, "PRIORITY", V.Local.sOtherSort)
+			
+			F.Intrinsic.Control.CallSub(AddModifiedWC, "KEY_SEQUENCE", V.DataTable.dtPlan(V.Local.iRowIndex).KEY_SEQUENCE!FieldValTrim)
+			F.Intrinsic.Control.CallSub(AddModifiedWC, "KEY_SEQUENCE", V.DataTable.dtPlan(V.Local.iOtherRowIndex).KEY_SEQUENCE!FieldValTrim)
+			F.Intrinsic.Control.CallSub(SaveModifiedWCSort)
+			
+			'Re-enable form and unblock events 
+			GUI.frmInspPlan.GSGC_InspPlan.Enabled(True)
+			F.Intrinsic.Control.UnblockEvents()
+	
+	F.Intrinsic.Control.EndSelect
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.GSGC_InspPlan_RowCellClick.End
+Program.Sub.AddModifiedWC.Start
+F.Intrinsic.Control.Try
+
+	V.Local.bInString.Declare(Boolean)
+	V.Local.sSubString.Declare(String)
+	
+	V.Local.sSubstring.Set(V.Args.KEY_SEQUENCE)
+	F.Intrinsic.String.IsInString(V.Global.sModifiedPriority, V.Local.sSubString, "True", V.Local.bInString)
+	F.Intrinsic.Control.If(V.Local.bInString.Not)
+		F.Intrinsic.Control.If(V.Global.sModifiedPriority.Trim, =, "")
+			V.Global.sModifiedPriority.Set(V.Local.sSubString)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("{0}*!*{1}", V.Global.sModifiedPriority, V.Local.sSubString, V.Global.sModifiedPriority)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.AddModifiedWC.End
+Program.Sub.SaveModifiedWCSort.Start
+F.Intrinsic.Control.Try
+	V.Local.iCounter.Declare(Long)
+	V.Local.sFilter.Declare(String)
+	V.Local.sKeySeqList.Declare(String)
+	V.Local.sSql.Declare(String)
+	V.Local.sSeq.Declare
+	
+	'Check for any values to update
+	F.Intrinsic.Control.If(V.Global.sModifiedPriority.Trim, =, "")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	'If being launched from WO header for the first time and no WO specific plan found, need to first write records to db table from the router plan for this sequence.
+	F.Intrinsic.Control.If(V.Global.bRouterHeader, =, False, AND, V.Global.bWOPlanFound, =, False)
+		'
+		V.Local.sSeq.Redim(0,0)
+		F.Intrinsic.String.Split(V.Screen.frmInspPlan!ddlSequences.Text, "::", V.Local.sSeq)
+		F.Data.DataTable.SetValue("dtPlan", -1, "JOB", V.Screen.frmInspPlan!txtWO.Text, "SUFFIX", V.Screen.frmInspPlan!txtSuffix.Text.Trim, "ROUTER", V.Screen.frmInspPlan!txtRouter.Text, "RTR_SEQ", V.Local.sSeq)
+		'Insert all columns but KEY_SEQUENCE, as we want PCC to auto assign those new key sequence values. 
+		'F.Data.DataTable.SaveToDB("dtPlan", "con", "GCG_7093_INSP_PLAN", "ROUTER*!*RTR_SEQ*!*JOB*!*SUFFIX*!*PRIORITY", 128, "JOB@!@JOB*!*SUFFIX@!@SUFFIX*!*ROUTER@!@ROUTER*!*RTR_SEQ@!@RTR_SEQ*!*INSP_TYPE@!@INSP_TYPE*!*FREQUENCY@!@FREQUENCY*!*METHOD@!@METHOD*!*PASS_FAIL@!@PASS_FAIL*!*PROCESS_DIM@!@PROCESS_DIM*!*PROCESS_DIM_DESC@!@PROCESS_DIM_DESC*!*UNIT@!@UNIT*!*CRITERIA_MIN@!@CRITERIA_MIN*!*CRITERIA_MAX@!@CRITERIA_MAX*!*PRIORITY@!@PRIORITY*!*GAUGE_NO@!@GAUGE_NO")
+		F.Data.DataTable.SaveToDB("dtPlan", "con", "GCG_7093_INSP_PLAN", "ROUTER*!*RTR_SEQ*!*JOB*!*SUFFIX*!*PRIORITY", 128, "JOB@!@JOB*!*SUFFIX@!@SUFFIX*!*ROUTER@!@ROUTER*!*RTR_SEQ@!@RTR_SEQ*!*INSPECTION_METHOD@!@INSP_METHOD*!*INSP_METHOD_DESC@!@INSP_METHOD_DESC*!*MEASURE_METHOD@!@MEASURE_METHOD*!*MEASURE_METHOD_DESC@!@MEASURE_METHOD_DESC*!*FILM_TYPE@!@FILM_TYPE*!*FILM_TARGET@!@FILM_TARGET*!*EXPECTED_RI@!@EXPECTED_RI*!*EXPECTED_RI_OPERATOR@!@EXPECTED_RI_OPERATOR*!*EXPECTED_RI_RANGE@!@EXPECTED_RI_RANGE*!*UNIT@!@UNIT*!*MEASURE_MIN@!@MEASURE_MIN*!*MEASURE_MAX@!@MEASURE_MAX*!*PRIORITY@!@PRIORITY")
+		'
+		'Refresh Grid to use the updated ordering of records with the WO specific one that was just created
+		F.Intrinsic.Control.CallSub(RefreshGrid)
+	F.Intrinsic.Control.Else
+		'Means we're editing from either router header or a WO specific plan. Can use old logic
+		'Split values to update and use to filter dataview
+		F.Intrinsic.String.Split(V.Global.sModifiedPriority, "*!*", V.Local.sKeySeqList)
+		F.Data.DataView.Create("dtPlan", "dvPlan", 22)
+		F.Intrinsic.Control.For(V.Local.iCounter, 0, V.Local.sKeySeqList.UBound, 1)
+			F.Intrinsic.String.Build("KEY_SEQUENCE = '{0}'", V.Local.sKeySeqList(V.Local.iCounter), V.Local.sFilter)
+			F.Data.DataView.SetFilter("dtPlan", "dvPlan", V.Local.sFilter)
+			'Save filtered value to dt and SaveToDB to update priority record
+			F.Data.DataView.ToDataTable("dtPlan", "dvPlan", "dtSave")
+			'
+			F.Data.DataTable.SaveToDB("dtSave", "Con", "GCG_7093_INSP_PLAN", "KEY_SEQUENCE", 256, "KEY_SEQUENCE@!@KEY_SEQUENCE*!*PRIORITY@!@PRIORITY")
+			'
+			F.Data.DataTable.Close("dtSave")
+		F.Intrinsic.Control.Next(V.Local.iCounter)
+		
+		F.Data.DataView.Close("dtPlan", "dvPlan")
+	F.Intrinsic.Control.EndIf
+	
+	V.Global.sModifiedPriority.Set("")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.SaveModifiedWCSort.End
+Program.Sub.UpdatePriorityValues.Start
+F.Intrinsic.Control.Try
+	V.Local.sSelect.Declare(String)
+	V.Local.sRer.Declare(String)
+	V.Local.sFilter.Declare(String)
+	V.Local.sRet.Declare(String)
+	V.Local.sPriority.Declare(String)
+	V.Local.iCount.Declare(Long)
+	
+	'Capture all priority records higher than the deleted record into table
+	F.Intrinsic.String.Build("PRIORITY > {0}", V.Args.DeletedPriorityNo, V.Local.sFilter)
+	F.Data.DataView.Create("dtPlan", "dvPlan", 22)
+	F.Data.DataView.SetFilter("dtPlan", "dvPlan", V.Local.sFilter)
+	F.Data.DataView.ToDataTable("dtPlan", "dvPlan", "dtToUpdate")
+	
+	'If table is not blank proceed to update priority values
+	F.Intrinsic.Control.If(V.DataTable.dtToUpdate.RowCount, !=, 0)
+		'Loop through table and decrease each priority by 1
+		F.Intrinsic.Control.For(V.Local.iCount, 0, V.DataTable.dtToUpdate.RowCount--, 1)
+			V.Local.sPriority.Set(V.DataTable.dtToUpdate(V.Local.iCount).PRIORITY!FieldVal)
+			F.Intrinsic.Math.Sub(V.Local.sPriority, 1, V.Local.sPriority)
+			'Reformat priority number to "000"
+			F.Intrinsic.String.Format(V.Local.sPriority, "000", V.Local.sPriority)
+			F.Data.Datatable.SetValue("dtToUpdate", V.Local.iCount, "PRIORITY", V.Local.sPriority)
+		F.Intrinsic.Control.Next(V.Local.iCount)
+		
+		F.Data.DataTable.SaveToDB("dtToUpdate", "Con", "GCG_7093_INSP_PLAN", "KEY_SEQUENCE", 256, "KEY_SEQUENCE@!@KEY_SEQUENCE*!*PRIORITY@!@PRIORITY")
+		
+	F.Intrinsic.Control.EndIf
+
+F.Data.DataTable.Close("dtToUpdate")
+F.Data.DataView.Close("dtPlan", "dvPlan")
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.UpdatePriorityValues.End
+Program.Sub.cmdAddItem_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.i.Declare
+	V.Local.sInspTypes.Declare
+	V.Local.sMethods.Declare
+	
+	'Check for blank sequence selection and end if so
+	F.Intrinsic.Control.If(V.Screen.frmInspPlan!ddlSequences.Text, =, "")
+		F.Intrinsic.UI.Msgbox("Please select a router sequence", "No Sequence")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	'Enable new record save button and hide delete button
+	GUI.frmAddItem.cmdSaveNewItem.Caption("Save")
+	GUI.frmAddItem.cmdDelete.Visible(False)
+
+	'Populate dropdownlists
+	F.Intrinsic.Control.CallSub(PopulateAddItemDropDowns)
+	
+	'Disable main form and show frmAddItem
+	GUI.frmInspPlan..Enabled(False)
+	GUI.frmAddItem..Show
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdAddItem_Click.End
+Program.Sub.PopulateAddItemDropDowns.Start
+F.Intrinsic.Control.Try
+	'
+			
+	F.Data.Dictionary.CreateFromSQL("dictInspMethod", "con", "select ltrim(rtrim(METHOD)) as KEYVAL, ltrim(rtrim(METHOD)) as VALUE from GCG_7093_INSP_TYPES")
+	F.Data.Dictionary.CreateFromSQL("dictMeasureMethods", "con", "select ltrim(rtrim(METHOD)) as KEYVAL, ltrim(rtrim(METHOD)) as VALUE from GCG_7093_MEASURE")
+	'Open Up the Names & items table to be able to grab their items for the 2 measure dropdown lists 
+	F.Data.Dictionary.CreateFromSQL("dictFilmTypeItems", "con", "select I.ITEM_NAME as KEYVAL, I.ITEM_NAME as VALUE from GCG_7093_MEAS_ITEMS I left join GCG_7093_MEAS_NAMES N on I.COMBO_ID = N.COMBO_ID where N.COMBO_NAME = 'CBOFILMTYPE'")
+	F.Data.Dictionary.CreateFromSQL("dictExpRIOpItems", "con", "select I.ITEM_NAME as KEYVAL, I.ITEM_NAME as VALUE from GCG_7093_MEAS_ITEMS I left join GCG_7093_MEAS_NAMES N on I.COMBO_ID = N.COMBO_ID where N.COMBO_NAME = 'CBORIOPERATOR'")
+	
+	gui.frmAddItem.ddlInspMethod.ClearItems
+	gui.frmAddItem.ddlMeasureMethod.ClearItems
+	Gui.frmAddItem.ddlFilmType.ClearItems
+	Gui.frmAddItem.ddlOpSign.ClearItems
+	
+	gui.frmAddItem.ddlInspMethod.AddItems("Dictionary", "dictInspMethod")
+	gui.frmAddItem.ddlMeasureMethod.AddItems("Dictionary", "dictMeasureMethods")
+	gui.frmAddItem.ddlFilmType.AddItems("Dictionary", "dictFilmTypeItems")
+	gui.frmAddItem.ddlOpSign.AddItems("Dictionary", "dictExpRIOpItems")
+	
+	'Add blank entries to allow user to clear ddl selection
+	gui.frmAddItem.ddlInspMethod.AddItem("", 0)
+	gui.frmAddItem.ddlMeasureMethod.AddItem("", 0)
+	gui.frmAddItem.ddlFilmType.AddItem("", 0)
+	gui.frmAddItem.ddlOpSign.AddItem("", 0)
+	
+	
+	F.Data.Dictionary.Close("dictInspMethod")
+	F.Data.Dictionary.Close("dictMeasureMethods")
+	F.Data.Dictionary.Close("dictFilmTypeItems")
+	F.Data.Dictionary.Close("dictExpRIOpItems")
+	'
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.PopulateAddItemDropDowns.End
+'Inspection Plan Screens: Add/Edit Item
+Program.Sub.frmAddItem_UnLoad.Start
+F.Intrinsic.Control.Try
+	'Disable and close frmAddItem
+	GUI.frmInspPlan..Enabled(True)
+	gui.frmAddItem..Visible(False)
+	'Clear all fields
+	'gui.frmAddItem.ddlInspMethod.AddItem("", 0)
+	gui.frmAddItem.ddlInspMethod.Text("")
+	gui.frmAddItem.ddlInspMethod.ClearItems
+	Gui.frmAddItem.txtInspMethDesc.Text("")
+	'gui.frmAddItem.chkScribe.Value(0)
+	'gui.frmAddItem.ddlMeasureMethod.AddItem("", 0)
+	gui.frmAddItem.ddlMeasureMethod.Text("")
+	gui.frmAddItem.ddlMeasureMethod.ClearItems
+	gui.frmAddItem.txtMeasureMethDesc.Text("")
+	Gui.frmAddItem.ddlFilmType.Text("")
+	Gui.frmAddItem.ddlFilmType.ClearItems
+	Gui.frmAddItem.txtFilmTarget.Text("")
+	gui.frmAddItem.txtFilmTolerance.Text("")
+	Gui.frmAddItem.txtExpRINum.Text("")
+	Gui.frmAddItem.ddlOpSign.Text("")
+	Gui.frmAddItem.ddlOpSign.ClearItems
+	Gui.frmAddItem.txtExpRIRange.Text("")
+	Gui.frmAddItem.txtUnit.Text("")
+	gui.frmAddItem.txtMin.Text("")
+	gui.frmAddItem.txtMax.Text("")
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.frmAddItem_UnLoad.End
+Program.Sub.chkScribe_Change1.Start
+F.Intrinsic.Control.Try
+	'When Toggled, call saving logic to save value specific to the router/WO + router seq/WO Suffix 
+	'That subroutine distinguishes where it was called from based on title of the save button on add item form
+	F.Intrinsic.Control.BlockEvents
+	Gui.frmAddItem.cmdSaveNewItem.Caption("Scribe")
+	F.Intrinsic.Control.CallSub(cmdSaveNewItem_Click)
+	Gui.frmAddItem.cmdSaveNewItem.Caption("Save")
+	
+	F.Intrinsic.Control.UnBlockEvents
+	
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.chkScribe_Change1.End
+Program.Sub.cmdDelete_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sDelSequence.Declare(String)
+	V.Local.sSql.Declare(String)
+	V.Local.sPriority.Declare(String)
+	V.Local.sRouter.Declare
+	V.Local.sSeq.Declare
+	V.Local.sWO.Declare
+	V.Local.sSuffix.Declare
+	
+	V.Local.sRouter.Set(V.Screen.frmInspPlan!txtRouter.Text.Trim)
+	F.Intrinsic.String.Split(V.Screen.frmInspPlan!ddlSequences.Text, "::", V.Local.sSeq)
+	V.Local.sWO.Set(V.Screen.frmInspPlan!txtWO.Text.Trim)
+	V.Local.sSuffix.Set(V.Screen.frmInspPlan!txtSuffix.Text.Trim)
+	
+	
+	'Capture current key sequence to delete
+	V.Local.sDelsequence.Set(V.DataTable.dtPlan(V.Global.iRowIndex).KEY_SEQUENCE!FieldValTrim)
+	'Capture selected record's priority value
+	V.Local.sPriority.Set(V.DataTable.dtPlan(V.Global.iRowIndex).PRIORITY!FieldValTrim)
+	
+	'Delete current record from both tables
+	'
+	F.Intrinsic.String.Build("Delete from GCG_7093_SCRIBE where rtrim(JOB) = '{0}' and rtrim(SUFFIX) = '{1}' and rtrim(ROUTER) = '{2}' and rtrim(RTR_SEQ) = '{3}'", V.Local.sWO, V.Local.sSuffix, V.Local.sRouter.PSQLFriendly, V.Local.sSeq, V.Local.sSql)
+	F.ODBC.Connection!con.Execute(V.Local.sSql)
+	F.Intrinsic.String.Build("Delete from GCG_7093_INSP_PLAN where KEY_SEQUENCE = '{0}'", V.Local.sDelSequence, V.Local.sSql)
+	F.ODBC.Connection!con.Execute(V.Local.sSql)
+	
+	'
+	'Call sub to update any
+	F.Intrinsic.Control.CallSub(UpdatePriorityValues, "DeletedPriorityNo", V.Local.sPriority)
+	
+	'Unload AddItemForm and refresh grid
+	F.Intrinsic.Control.CallSub(frmAddItem_UnLoad)
+	F.Intrinsic.Control.CallSub(RefreshGrid)
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdDelete_Click.End
+Program.Sub.cmdSaveNewItem_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sKeySeq.Declare(String)
+	V.Local.sNewPriority.Declare(String)
+	V.Local.sRouter.Declare
+	V.Local.sSeq.Declare
+	V.Local.sWO.Declare
+	V.Local.sSuffix.Declare
+	V.Local.sInspMethod.Declare(String)
+	V.Local.sInspMethDesc.Declare(String)
+	V.Local.sMeasureMethod.Declare(String)
+	V.Local.sMeasureMethDesc.Declare
+	V.Local.sFilmType.Declare(String)
+	V.Local.fFilmTarget.Declare
+	V.Local.fFilmTolerance.Declare(Float)
+	V.Local.fExpectedRI.Declare(Float)
+	V.Local.sExpectedRIOperator.Declare
+	V.Local.fExpectedRIRange.Declare
+	V.Local.sUnit.Declare(String)
+	V.Local.fMin.Declare(Float)
+	V.Local.fMax.Declare(Float)
+	V.Local.bScribeCheck.Declare(Boolean)
+	V.Local.sData.Declare
+	
+	V.Local.sSql.Declare(String)
+	V.Local.sBit.Declare(String)
+	V.Local.iCnt.Declare
+	
+	
+	V.Local.sRouter.Set(V.Screen.frmInspPlan!txtRouter.Text.Trim)
+	V.Local.sWO.Set(V.Screen.frmInspPlan!txtWO.Text.Trim)
+	V.Local.sSuffix.Set(V.Screen.frmInspPlan!txtSuffix.Text.Trim)
+	V.Local.sInspMethod.Set(V.Screen.frmAddItem!ddlInspMethod.Text.Trim)
+	V.Local.sInspMethDesc.Set(V.Screen.frmAddItem!txtInspMethDesc.Text.Trim)
+	V.Local.sMeasureMethod.Set(V.Screen.frmAddItem!ddlMeasureMethod.Text.Trim)
+	V.Local.sMeasureMethDesc.Set(V.Screen.frmAddItem!txtMeasureMethDesc.Text.Trim)
+	V.Local.sFilmType.Set(V.Screen.frmAddItem!ddlFilmType.Text)
+	V.Local.fFilmTarget.Set(V.Screen.frmAddItem!txtFilmTarget.Text)
+	V.Local.fFilmTolerance.Set(V.Screen.frmAddItem!txtFilmTolerance.Text)
+	
+	V.Local.fExpectedRI.Set(V.Screen.frmAddItem!txtExpRINum.Text)
+	V.Local.sExpectedRIOperator.Set(V.Screen.frmAddItem!ddlOpSign.Text.Trim)
+	V.Local.fExpectedRIRange.Set(V.Screen.frmAddItem!txtExpRIRange.Text)
+	
+	V.Local.sUnit.Set(V.Screen.frmAddItem!txtUnit.Text.Trim)
+	V.Local.fMin.Set(V.Screen.frmAddItem!txtMin.Text)
+	V.Local.fMax.Set(V.Screen.frmAddItem!txtMax.Text)
+	V.Local.bScribeCheck.Set(V.Screen.frmInspPlan!chkScribe.Value)
+	
+	
+	'Convert pass/fail selection to bit value
+	F.Intrinsic.Control.If(V.Local.bScribeCheck, =, False)
+		V.Local.sBit.Set(0)
+	F.Intrinsic.Control.Else
+		V.Local.sBit.Set(1)
+	F.Intrinsic.Control.EndIf
+	
+	'Check for missing required fields
+	Function.Intrinsic.Debug.Stop
+	
+	
+'	F.Intrinsic.Control.If(V.Local.sInspMethod, =, "", OR, V.Local.sInspMethDesc, =, "", V.Local.sMeasureMethod, =, "", V.Local.sUnit, =, "")
+'		F.Intrinsic.UI.Msgbox("One or more required fields are blank", "Incomplete Plan Form")
+'		F.Intrinsic.Control.ExitSub
+'	'If record is not checked for pass fail, check for missing required fields
+'	F.Intrinsic.Control.ElseIf(V.Local.bScribeCheck, =, False)
+'		F.Intrinsic.Control.If(V.Screen.frmAddItem!txtFilmTolerance.Text, =, "", OR, V.Screen.frmAddItem!txtMin.Text, =, "", V.Screen.frmAddItem!txtMax.Text, =, "")
+'				F.Intrinsic.UI.Msgbox("One or more required dimension fields are blank", "Incomplete Plan Form")
+'					F.Intrinsic.Control.ExitSub
+'		F.Intrinsic.Control.EndIf
+'	F.Intrinsic.Control.EndIf
+	
+	
+	V.Local.sSeq.Redim(0,0)
+	F.Intrinsic.String.Split(V.Screen.frmInspPlan!ddlSequences.Text, "::", V.Local.sSeq)
+	
+	F.Intrinsic.Control.SelectCase(V.Screen.frmAddItem!cmdSaveNewItem.Caption)
+		'New record insert
+		F.Intrinsic.Control.Case("Save")
+			'If project launched from WO header, insert new record with WO and Suffix recorded. This entire sequence is now a WO specific inspection plan. All other sequences ones will need to be updated, otherwise, it will continue to pull the router plan through 
+			F.Intrinsic.Control.CallSub(CheckValidSave)
+			F.Intrinsic.Control.If(V.Args.Return, <>, "")
+				F.Intrinsic.UI.Msgbox(V.Args.Return, "Check Entry")
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.EndIf
+			
+			F.Intrinsic.Control.If(V.Global.bRouterHeader, =, False, AND, V.Global.bWOPlanFound, =, False)
+			'Means editing a router plan for the first time for the given sequence. Convert new record as well as all other records on this sequence to WO specific
+				'Get next priority number or start at 001 if no records yet exist for router/seq combination
+				F.Intrinsic.String.Build("Select IsNull(right('000'+cast(max(cast(PRIORITY as Int))+1 as Varchar(3)),3),'001') as EXP from GCG_7093_INSP_PLAN where ROUTER = '{0}' and RTR_SEQ = '{1}'", V.Local.sRouter.PSQLFriendly, V.Local.sSeq.PSQLFriendly, V.Local.sSql)
+				F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSql, V.Local.sNewPriority)
+				'Add new record
+				'F.Intrinsic.String.Build("Insert into GCG_7093_INSP_PLAN (ROUTER, RTR_SEQ, INSP_METHOD, INSP_METHOD_DESC, MEASURE_METHOD, MEASURE_METHOD_DESC, FILM_TYPE, FILM_TARGET, FILM_TOLERANCE, EXPECTED_RI, EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, PRIORITY, UNIT, MEASURE_MIN, MEASURE_MAX, SCRIBE_CHECK, JOB, SUFFIX) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}', '{17}', '{18}')", V.Local.sRouter.PSQLFriendly, V.Local.sSeq.PSQLFriendly, V.Local.sInspMethod.PSQLFriendly, V.Local.sInspMethDesc.PSQLFriendly, V.Local.sMeasureMethod.PSQLFriendly, V.Local.sMeasureMethDesc.PSQLFriendly, V.Local.sFilmType.PSQLFriendly, V.Local.fFilmTarget, V.Local.fFilmTolerance, V.Local.fExpectedRI, V.Local.sExpectedRIOperator.PSQLFriendly, V.Local.fExpectedRIRange, V.Local.sNewPriority.PSQLFriendly, V.Local.sUnit.PSQLFriendly, V.Local.fMin, V.Local.fMax, V.Local.sBit, V.Local.sWO.PSQLFriendly, V.Local.sSuffix.PSQLFriendly, V.Local.sSql)
+				F.Intrinsic.String.Build("Insert into GCG_7093_INSP_PLAN (ROUTER, RTR_SEQ, INSP_METHOD, INSP_METHOD_DESC, MEASURE_METHOD, MEASURE_METHOD_DESC, FILM_TYPE, FILM_TARGET, FILM_TOLERANCE, EXPECTED_RI, EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, PRIORITY, UNIT, MEASURE_MIN, MEASURE_MAX, JOB, SUFFIX) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}', '{17}')", V.Local.sRouter.PSQLFriendly, V.Local.sSeq.PSQLFriendly, V.Local.sInspMethod.PSQLFriendly, V.Local.sInspMethDesc.PSQLFriendly, V.Local.sMeasureMethod.PSQLFriendly, V.Local.sMeasureMethDesc.PSQLFriendly, V.Local.sFilmType.PSQLFriendly, V.Local.fFilmTarget, V.Local.fFilmTolerance, V.Local.fExpectedRI, V.Local.sExpectedRIOperator.PSQLFriendly, V.Local.fExpectedRIRange, V.Local.sNewPriority.PSQLFriendly, V.Local.sUnit.PSQLFriendly, V.Local.fMin, V.Local.fMax, V.Local.sWO.PSQLFriendly, V.Local.sSuffix.PSQLFriendly, V.Local.sSql)
+				F.ODBC.Connection!con.Execute(V.Local.sSql)
+				
+				'Update all other records on sequence to record WO + Suffix. 
+				F.Data.DataTable.SetValue("dtPlan", -1, "JOB", V.Local.sWO, "SUFFIX", V.Local.sSuffix, "ROUTER", V.Local.sRouter, "RTR_SEQ", V.Local.sSeq)
+				'Copy all columns but KEY_SEQUENCE, as we want PCC to auto assign those key sequence values. 
+				
+				'F.Data.DataTable.SaveToDB("dtPlan", "con", "GCG_7093_INSP_PLAN", "ROUTER*!*RTR_SEQ*!*JOB*!*SUFFIX*!*PRIORITY", 128, "JOB@!@JOB*!*SUFFIX@!@SUFFIX*!*ROUTER@!@ROUTER*!*RTR_SEQ@!@RTR_SEQ*!*INSPECTION_METHOD@!@INSP_METHOD*!*INSP_METHOD_DESC@!@INSP_METHOD_DESC*!*MEASURE_METHOD@!@MEASURE_METHOD*!*MEASURE_METHOD_DESC@!@MEASURE_METHOD_DESC*!*FILM_TYPE@!@FILM_TYPE*!*FILM_TARGET@!@FILM_TARGET*!*FILM_TOLERANCE@!@FILM_TOLERANCE*!*EXPECTED_RI@!@EXPECTED_RI*!*EXPECTED_RI_OPERATOR@!@EXPECTED_RI_OPERATOR*!*EXPECTED_RI_RANGE@!@EXPECTED_RI_RANGE*!*PRIORITY@!@PRIORITY*!*UNIT@!@UNIT*!*MEASURE_MIN@!@MEASURE_MIN*!*MEASURE_MAX@!@MEASURE_MAX*!*SCRIBE_CHECK@!@SCRIBE_CHECK")
+				F.Data.DataTable.SaveToDB("dtPlan", "con", "GCG_7093_INSP_PLAN", "ROUTER*!*RTR_SEQ*!*JOB*!*SUFFIX*!*PRIORITY", 128, "JOB@!@JOB*!*SUFFIX@!@SUFFIX*!*ROUTER@!@ROUTER*!*RTR_SEQ@!@RTR_SEQ*!*INSPECTION_METHOD@!@INSP_METHOD*!*INSP_METHOD_DESC@!@INSP_METHOD_DESC*!*MEASURE_METHOD@!@MEASURE_METHOD*!*MEASURE_METHOD_DESC@!@MEASURE_METHOD_DESC*!*FILM_TYPE@!@FILM_TYPE*!*FILM_TARGET@!@FILM_TARGET*!*FILM_TOLERANCE@!@FILM_TOLERANCE*!*EXPECTED_RI@!@EXPECTED_RI*!*EXPECTED_RI_OPERATOR@!@EXPECTED_RI_OPERATOR*!*EXPECTED_RI_RANGE@!@EXPECTED_RI_RANGE*!*PRIORITY@!@PRIORITY*!*UNIT@!@UNIT*!*MEASURE_MIN@!@MEASURE_MIN*!*MEASURE_MAX@!@MEASURE_MAX")
+			F.Intrinsic.Control.ElseIf(V.Global.bRouterHeader, =, False, AND, V.Global.bWOPlanFound, =, True)
+			'Adding just one record to the sequence. Table has been converted to a WO plan already
+				F.Intrinsic.String.Build("Select IsNull(right('000'+cast(max(cast(PRIORITY as Int))+1 as Varchar(3)),3),'001') as EXP from GCG_7093_INSP_PLAN where ROUTER = '{0}' and RTR_SEQ = '{1}' and JOB = '{2}' and SUFFIX = '{3}'", V.Local.sRouter.PSQLFriendly, V.Local.sSeq.PSQLFriendly, V.Local.sWO.PSQLFriendly, V.Local.sSuffix.PSQLFriendly, V.Local.sSql)
+				F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSql, V.Local.sNewPriority)
+				'If all required fields are present build insert query and run
+				
+				'F.Intrinsic.String.Build("Insert into GCG_7093_INSP_PLAN (ROUTER, RTR_SEQ, INSP_METHOD, INSP_METHOD_DESC, MEASURE_METHOD, MEASURE_METHOD_DESC, FILM_TYPE, FILM_TARGET, FILM_TOLERANCE, EXPECTED_RI, EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, PRIORITY, UNIT, MEASURE_MIN, MEASURE_MAX, SCRIBE_CHECK, JOB, SUFFIX) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}', '{17}', '{18}')", V.Local.sRouter.PSQLFriendly, V.Local.sSeq.PSQLFriendly, V.Local.sInspMethod.PSQLFriendly, V.Local.sInspMethDesc.PSQLFriendly, V.Local.sMeasureMethod.PSQLFriendly, V.Local.sMeasureMethDesc.PSQLFriendly, V.Local.sFilmType.PSQLFriendly, V.Local.fFilmTarget, V.Local.fFilmTolerance, V.Local.fExpectedRI, V.Local.sExpectedRIOperator.PSQLFriendly, V.Local.fExpectedRIRange, V.Local.sNewPriority.PSQLFriendly, V.Local.sUnit.PSQLFriendly, V.Local.fMin, V.Local.fMax, V.Local.sBit, V.Local.sWO.PSQLFriendly, V.Local.sSuffix.PSQLFriendly, V.Local.sSql)
+				F.Intrinsic.String.Build("Insert into GCG_7093_INSP_PLAN (ROUTER, RTR_SEQ, INSP_METHOD, INSP_METHOD_DESC, MEASURE_METHOD, MEASURE_METHOD_DESC, FILM_TYPE, FILM_TARGET, FILM_TOLERANCE, EXPECTED_RI, EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, PRIORITY, UNIT, MEASURE_MIN, MEASURE_MAX, JOB, SUFFIX) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}', '{17}')", V.Local.sRouter.PSQLFriendly, V.Local.sSeq.PSQLFriendly, V.Local.sInspMethod.PSQLFriendly, V.Local.sInspMethDesc.PSQLFriendly, V.Local.sMeasureMethod.PSQLFriendly, V.Local.sMeasureMethDesc.PSQLFriendly, V.Local.sFilmType.PSQLFriendly, V.Local.fFilmTarget, V.Local.fFilmTolerance, V.Local.fExpectedRI, V.Local.sExpectedRIOperator.PSQLFriendly, V.Local.fExpectedRIRange, V.Local.sNewPriority.PSQLFriendly, V.Local.sUnit.PSQLFriendly, V.Local.fMin, V.Local.fMax, V.Local.sWO.PSQLFriendly, V.Local.sSuffix.PSQLFriendly, V.Local.sSql)
+				
+				F.ODBC.Connection!con.Execute(V.Local.sSql)
+			F.Intrinsic.Control.Else
+				'Get next priority number or start at 001 if no records yet exist for router/seq combination
+				F.Intrinsic.String.Build("Select IsNull(right('000'+cast(max(cast(PRIORITY as Int))+1 as Varchar(3)),3),'001') as EXP from GCG_7093_INSP_PLAN where ROUTER = '{0}' and RTR_SEQ = '{1}'", V.Local.sRouter.PSQLFriendly, V.Local.sSeq.PSQLFriendly, V.Local.sSql)
+				F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSql, V.Local.sNewPriority)
+				'If all required fields are present build insert query and run
+				'F.Intrinsic.String.Build("Insert into GCG_7093_INSP_PLAN (ROUTER, RTR_SEQ, INSP_METHOD, INSP_METHOD_DESC, MEASURE_METHOD, MEASURE_METHOD_DESC, FILM_TYPE, FILM_TARGET, FILM_TOLERANCE, EXPECTED_RI, EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, PRIORITY, UNIT, MEASURE_MIN, MEASURE_MAX, SCRIBE_CHECK) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}', '{16}')", V.Local.sRouter.PSQLFriendly, V.Local.sSeq.PSQLFriendly, V.Local.sInspMethod.PSQLFriendly, V.Local.sInspMethDesc.PSQLFriendly, V.Local.sMeasureMethod.PSQLFriendly, V.Local.sMeasureMethDesc.PSQLFriendly, V.Local.sFilmType.PSQLFriendly, V.Local.fFilmTarget, V.Local.fFilmTolerance, V.Local.fExpectedRI, V.Local.sExpectedRIOperator.PSQLFriendly, V.Local.fExpectedRIRange, V.Local.sNewPriority, V.Local.sUnit.PSQLFriendly, V.Local.fMin, V.Local.fMax, V.Local.sBit, V.Local.sSql)
+				F.Intrinsic.String.Build("Insert into GCG_7093_INSP_PLAN (ROUTER, RTR_SEQ, INSP_METHOD, INSP_METHOD_DESC, MEASURE_METHOD, MEASURE_METHOD_DESC, FILM_TYPE, FILM_TARGET, FILM_TOLERANCE, EXPECTED_RI, EXPECTED_RI_OPERATOR, EXPECTED_RI_RANGE, PRIORITY, UNIT, MEASURE_MIN, MEASURE_MAX) values ('{0}', '{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}', '{9}', '{10}', '{11}', '{12}', '{13}', '{14}', '{15}')", V.Local.sRouter.PSQLFriendly, V.Local.sSeq.PSQLFriendly, V.Local.sInspMethod.PSQLFriendly, V.Local.sInspMethDesc.PSQLFriendly, V.Local.sMeasureMethod.PSQLFriendly, V.Local.sMeasureMethDesc.PSQLFriendly, V.Local.sFilmType.PSQLFriendly, V.Local.fFilmTarget, V.Local.fFilmTolerance, V.Local.fExpectedRI, V.Local.sExpectedRIOperator.PSQLFriendly, V.Local.fExpectedRIRange, V.Local.sNewPriority, V.Local.sUnit.PSQLFriendly, V.Local.fMin, V.Local.fMax, V.Local.sSql)
+				
+				F.ODBC.Connection!con.Execute(V.Local.sSql)
+				'F.ODBC.Connection!con.Close
+			F.Intrinsic.Control.EndIf
+			
+			'F.ODBC.Connection!con.Close
+			
+			Gui.frmInspPlan.chkScribe.Enabled(True)
+			F.Intrinsic.Control.CallSub(frmAddItem_UnLoad)
+			F.Intrinsic.Control.CallSub(RefreshGrid)
+			
+		'Record edit
+		F.Intrinsic.Control.Case("Save Edit")
+			F.Intrinsic.Control.CallSub(CheckValidSave)
+			F.Intrinsic.Control.If(V.Args.Return, <>, "")
+				F.Intrinsic.UI.Msgbox(V.Args.Return, "Check Entry")
+				F.Intrinsic.Control.ExitSub
+			F.Intrinsic.Control.EndIf
+			F.Intrinsic.Control.If(V.Global.bRouterHeader, =, False, AND, V.Global.bWOPlanFound, =, False)
+			'Means editing a router plan for the first time for the given sequence. Convert new record as well as all other records on this sequence to WO specific
+				'Update record being modified in datatable only. Leave out job and suffix, that's done in next line for all records in the sequence
+				'F.Data.DataTable.SetValue("dtPlan", V.Global.iRowIndex, "ROUTER", V.Local.sRouter, "RTR_SEQ", V.Local.sSeq, "INSPECTION_METHOD", V.Local.sInspMethod, "INSP_METHOD_DESC", V.Local.sInspMethDesc, "MEASURE_METHOD", V.Local.sMeasureMethod, "MEASURE_METHOD_DESC", V.Local.sMeasureMethDesc, "FILM_TYPE", V.Local.sFilmType, "FILM_TARGET", V.Local.fFilmTarget, "FILM_TOLERANCE", V.Local.fFilmTolerance, "EXPECTED_RI", V.Local.fExpectedRI, "EXPECTED_RI_OPERATOR", V.Local.sExpectedRIOperator, "EXPECTED_RI_RANGE", V.Local.fExpectedRIRange, "UNIT", V.Local.sUnit, "MEASURE_MIN", V.Local.fMin, "MEASURE_MAX", V.Local.fMax, "SCRIBE_CHECK", V.Local.bScribeCheck)
+				F.Data.DataTable.SetValue("dtPlan", V.Global.iRowIndex, "ROUTER", V.Local.sRouter, "RTR_SEQ", V.Local.sSeq, "INSPECTION_METHOD", V.Local.sInspMethod, "INSP_METHOD_DESC", V.Local.sInspMethDesc, "MEASURE_METHOD", V.Local.sMeasureMethod, "MEASURE_METHOD_DESC", V.Local.sMeasureMethDesc, "FILM_TYPE", V.Local.sFilmType, "FILM_TARGET", V.Local.fFilmTarget, "FILM_TOLERANCE", V.Local.fFilmTolerance, "EXPECTED_RI", V.Local.fExpectedRI, "EXPECTED_RI_OPERATOR", V.Local.sExpectedRIOperator, "EXPECTED_RI_RANGE", V.Local.fExpectedRIRange, "UNIT", V.Local.sUnit, "MEASURE_MIN", V.Local.fMin, "MEASURE_MAX", V.Local.fMax)
+				
+				'Update all records on sequence to record WO + Suffix. Insert Router and sequence
+				F.Data.DataTable.SetValue("dtPlan", -1, "JOB", V.Local.sWO, "SUFFIX", V.Local.sSuffix, "ROUTER", V.Local.sRouter, "RTR_SEQ", V.Local.sSeq)
+				'Insert all columns but KEY_SEQUENCE, as we want PCC to auto assign those key sequence values. 
+				F.Data.DataTable.SaveToDB("dtPlan", "con", "GCG_7093_INSP_PLAN", "ROUTER*!*RTR_SEQ*!*JOB*!*SUFFIX*!*PRIORITY", 128, "JOB@!@JOB*!*SUFFIX@!@SUFFIX*!*ROUTER@!@ROUTER*!*RTR_SEQ@!@RTR_SEQ*!*INSPECTION_METHOD@!@INSP_METHOD*!*INSP_METHOD_DESC@!@INSP_METHOD_DESC*!*MEASURE_METHOD@!@MEASURE_METHOD*!*MEASURE_METHOD_DESC@!@MEASURE_METHOD_DESC*!*FILM_TYPE@!@FILM_TYPE*!*FILM_TARGET@!@FILM_TARGET*!*FILM_TOLERANCE@!@FILM_TOLERANCE*!*EXPECTED_RI@!@EXPECTED_RI*!*EXPECTED_RI_OPERATOR@!@EXPECTED_RI_OPERATOR*!*EXPECTED_RI_RANGE@!@EXPECTED_RI_RANGE*!*PRIORITY@!@PRIORITY*!*UNIT@!@UNIT*!*MEASURE_MIN@!@MEASURE_MIN*!*MEASURE_MAX@!@MEASURE_MAX")
+
+			F.Intrinsic.Control.Else
+				'Same logic should apply in the case it's being modified when called from Router header or WO header.
+				'Capture records key sequence to edit
+				V.Local.sKeySeq.Set(V.DataTable.dtPlan(V.Global.iRowIndex).KEY_SEQUENCE!FieldVal)
+				'Build update query and run
+				'F.Intrinsic.String.Build("Update GCG_7093_INSP_PLAN set INSP_METHOD = '{0}', INSP_METHOD_DESC = '{1}', MEASURE_METHOD = '{2}', MEASURE_METHOD_DESC = '{3}', FILM_TYPE = '{4}', FILM_TARGET = '{5}', FILM_TOLERANCE = '{6}', EXPECTED_RI = '{7}', EXPECTED_RI_OPERATOR = '{8}', EXPECTED_RI_RANGE = '{9}', UNIT = '{10}', MEASURE_MIN = '{11}', MEASURE_MAX = '{12}', SCRIBE_CHECK = '{13}' where KEY_SEQUENCE = '{14}'", V.Local.sInspMethod.PSQLFriendly, V.Local.sInspMethDesc.PSQLFriendly, V.Local.sMeasureMethod.PSQLFriendly, V.Local.sMeasureMethDesc.PSQLFriendly, V.Local.sFilmType.PSQLFriendly, V.Local.fFilmTarget, V.Local.fFilmTolerance, V.Local.fExpectedRI, V.Local.sExpectedRIOperator.PSQLFriendly, V.Local.fExpectedRIRange, V.Local.sUnit.PSQLFriendly, V.Local.fMin, V.Local.fMax, V.Local.sBit, V.Local.sKeySeq, V.Local.sSql)
+				F.Intrinsic.String.Build("Update GCG_7093_INSP_PLAN set INSP_METHOD = '{0}', INSP_METHOD_DESC = '{1}', MEASURE_METHOD = '{2}', MEASURE_METHOD_DESC = '{3}', FILM_TYPE = '{4}', FILM_TARGET = '{5}', FILM_TOLERANCE = '{6}', EXPECTED_RI = '{7}', EXPECTED_RI_OPERATOR = '{8}', EXPECTED_RI_RANGE = '{9}', UNIT = '{10}', MEASURE_MIN = '{11}', MEASURE_MAX = '{12}' where KEY_SEQUENCE = '{13}'", V.Local.sInspMethod.PSQLFriendly, V.Local.sInspMethDesc.PSQLFriendly, V.Local.sMeasureMethod.PSQLFriendly, V.Local.sMeasureMethDesc.PSQLFriendly, V.Local.sFilmType.PSQLFriendly, V.Local.fFilmTarget, V.Local.fFilmTolerance, V.Local.fExpectedRI, V.Local.sExpectedRIOperator.PSQLFriendly, V.Local.fExpectedRIRange, V.Local.sUnit.PSQLFriendly, V.Local.fMin, V.Local.fMax, V.Local.sKeySeq, V.Local.sSql)
+				F.ODBC.Connection!con.Execute(V.Local.sSql)
+				'F.ODBC.Connection!con.Close
+				
+			F.Intrinsic.Control.EndIf
+			
+			'F.ODBC.Connection!con.Close
+			
+			Gui.frmInspPlan.chkScribe.Enabled(True)
+			F.Intrinsic.Control.CallSub(frmAddItem_UnLoad)
+			F.Intrinsic.Control.CallSub(RefreshGrid)
+		
+		'Means we're toggling scribe check. By default, checkbox control is disabled until a single line is added to the router sequence from logic above.
+		F.Intrinsic.Control.Case("Scribe")
+			F.Intrinsic.String.Build("{0}*!*{1}*!*{2}*!*{3}*!*{4}", V.Local.sWO, V.Local.sSuffix, V.Local.sRouter.PSQLFriendly, V.Local.sSeq, V.Local.bScribeCheck, V.Local.sData)
+			
+			F.Data.DataTable.CreateFromString("dtScribeUpdate", V.Local.sData, "JOB*!*SUFFIX*!*ROUTER*!*RTR_SEQ*!*SCRIBE_CHECK", "String*!*String*!*String*!*String*!*Boolean", "*!*", "")
+			F.Data.DataTable.SaveToDB("dtScribeUpdate", "con", "GCG_7093_SCRIBE", "JOB*!*SUFFIX*!*ROUTER*!*RTR_SEQ", 256)
+'			F.Intrinsic.Control.If(V.Global.bUpdateScribe)
+'				F.Intrinsic.String.Build("Update GCG_7093_SCRIBE set JOB = '{0}', SUFFIX = '{1}', ROUTER = '{2}', RTR_SEQ = '{3}', SCRIBE_CHECK = '{4}' where JOB = '{0}' and SUFFIX = '{1}', ROUTER = '{2}', RTR_SEQ = '{3}'", V.Local.sWO, V.Local.sSuffix, V.Local.sRouter.PSQLFriendly, V.Local.sSeq, V.Local.sBit, V.Local.sSql)
+'				F.ODBC.Connection!con.Execute(V.Local.sSql)
+'			F.Intrinsic.Control.Else
+'				F.Intrinsic.String.Build("insert into GCG_7093_SCRIBE (JOB, SUFFIX, ROUTER, RTR_SEQ, SCRIBE_CHECK) values ('{0}', '{1}', '{2}', '{3}', '{4}')", V.Local.sWO, V.Local.sSuffix, V.Local.sRouter.PSQLFriendly, V.Local.sSeq, V.Local.sBit, V.Local.sSql)
+'				F.ODBC.Connection!con.Execute(V.Local.sSql)
+'			F.Intrinsic.Control.EndIf
+			
+			
+	F.Intrinsic.Control.EndSelect
+	
+	'
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSaveNewItem_Click.End
+Program.Sub.CheckValidSave.Start
+F.Intrinsic.Control.Try
+	V.Local.bIsMeasure.Declare(Boolean, False)
+	V.Local.bIsInsp.Declare(Boolean, False)
+	V.Local.bHasMeasure.Declare(Boolean, False)
+	V.Local.sInspMethod.Declare
+	V.Local.sMeasureMethod.Declare
+	V.Local.sError.Declare
+	
+	'Only an inspection type, or a measure type should be entered. Not both 
+	V.Local.sInspMethod.Set(V.Screen.frmAddItem!ddlInspMethod.Text)
+	V.Local.sMeasureMethod.Set(V.Screen.frmAddItem!ddlMeasureMethod.Text)
+	
+	F.Intrinsic.Control.If(V.Local.sInspMethod, <>, "")
+		V.Local.bIsInsp.Set(True)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.If(V.Local.sMeasureMethod, <>, "")
+		V.Local.bHasMeasure.Set(True)
+	F.Intrinsic.Control.EndIf
+	
+	
+	F.Intrinsic.Control.If(V.Local.sMeasureMethod, <>, "", OR, V.Screen.frmAddItem!ddlFilmType.Text, <>, "",  V.Screen.frmAddItem!txtFilmTarget.Text, <>, "", V.Screen.frmAddItem!txtFilmTolerance.Text, <>, "", V.Screen.frmAddItem!txtExpRINum.Text, <>, "", V.Screen.frmAddItem!ddlOpSign.Text, <>, "", V.Screen.frmAddItem!txtExpRIRange.Text, <>, "")
+		V.Local.bIsMeasure.Set(True)
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.Local.bIsMeasure)
+		F.Intrinsic.Control.If(V.Local.bHasMeasure.Not)
+			V.Local.sError.Set("Please fill out a measure method")
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.Local.bIsMeasure, =, False, AND, V.Local.bIsInsp, =, False)
+		V.Local.sError.Set("Please fill out an inspection or measure method")
+	F.Intrinsic.Control.ElseIf(V.Local.bIsInsp, =, V.Local.bIsMeasure)
+		V.Local.sError.Set("Please only fill out an inspection or a measure method, but not both")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Variable.AddRV("Return", V.Local.sError)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.CheckValidSave.End
+Program.Sub.ddlInspMethod_Change.Start
+F.Intrinsic.Control.Try
+	'Changing Insp Method should populate the method description 
+	V.Local.sSQL.Declare
+	V.Local.sInspMethod.Declare
+	V.Local.sInspMethDesc.Declare
+	V.Local.bInvalidRet.Declare
+	
+	
+	
+	V.Local.sInspMethod.Set(V.Screen.frmAddItem!ddlInspMethod.Text.Trim)
+	F.Intrinsic.String.Build("select METHOD_DESCRIPTION from GCG_7093_INSP_TYPES where METHOD = '{0}'", V.Local.sInspMethod.PSQLFriendly, V.Local.sSQL)
+	F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL, V.Local.sInspMethDesc)
+	'This should only return one thing, but just in case have check 
+	
+	F.Intrinsic.String.IsInString(V.Local.sInspMethDesc, "#$#", True, V.Local.bInvalidRet)
+	F.Intrinsic.Control.If(V.Local.bInvalidRet, =, False, AND, V.Local.sInspMethDesc, <>, "")
+		Gui.frmAddItem.txtInspMethDesc.Text(V.Local.sInspMethDesc)
+	F.Intrinsic.Control.Else
+		Gui.frmAddItem.txtInspMethDesc.Text("")
+	F.Intrinsic.Control.EndIf
+	
+	'
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.ddlInspMethod_Change.End
+Program.Sub.ddlMeasureMethod_Change.Start
+F.Intrinsic.Control.Try
+	'Changing Measure method should set the method description as well as the default unit set in the maintenance program 
+	V.Local.sSQL.Declare
+	V.Local.sMeasureMethod.Declare
+	V.Local.sRet.Declare
+	V.Local.sMeasureMethDesc.Declare
+	V.Local.sUnit.Declare
+	V.Local.bInvalidRet.Declare
+	
+	
+	
+	V.Local.sMeasureMethod.Set(V.Screen.frmAddItem!ddlMeasureMethod.Text.Trim)
+	F.Intrinsic.String.Build("select METHOD_DESCRIPTION, UNIT from GCG_7093_MEASURE where METHOD = '{0}'", V.Local.sMeasureMethod.PSQLFriendly, V.Local.sSQL)
+	F.ODBC.Connection!con.ExecuteAndReturn(V.Local.sSQL, V.Local.sRet)
+	'This should only return one row, but just in case have check 
+	F.Intrinsic.String.IsInString(V.Local.sRet, "#$#", True, V.Local.bInvalidRet)
+	F.Intrinsic.Control.If(V.Local.bInvalidRet, =, False, AND, V.Local.sRet, <>, "")
+		'Further parse string return to grab description and unit values 
+		F.Intrinsic.String.Split(V.Local.sRet, "*!*", V.Local.sRet)
+		V.Local.sMeasureMethDesc.Set(V.Local.sRet(0))
+		V.Local.sUnit.Set(v.Local.sRet(1))
+		Gui.frmAddItem.txtMeasureMethDesc.Text(V.Local.sMeasureMethDesc)
+		Gui.frmAddItem.txtUnit.Text(V.Local.sUnit)
+	F.Intrinsic.Control.Else
+		Gui.frmAddItem.txtMeasureMethDesc.Text("")
+		Gui.frmAddItem.txtUnit.Text("")
+	F.Intrinsic.Control.EndIf
+	
+	'
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.ddlMeasureMethod_Change.End
+Program.Sub.txtFilmTarget_Change.Start
+F.Intrinsic.Control.Try
+	V.Local.iTarget.Declare
+	V.Local.fTolerance.Declare
+	V.Local.fDiff.Declare
+	V.Local.fUpper.Declare
+	V.Local.fLower.Declare
+	V.Local.fMax.Declare
+	V.Local.fMin.Declare
+	
+	V.Local.iTarget.Set(V.Screen.frmAddItem!txtFilmTarget.Text)
+	V.Local.fTolerance.Set(V.Screen.frmAddItem!txtFilmTolerance.Text)
+	
+	F.Intrinsic.Control.If(V.Local.iTarget, <>, 0, AND, V.Local.fTolerance, <>, 0)
+		F.Intrinsic.Math.Div(V.Local.fTolerance, 100, V.Local.fTolerance)
+		F.Intrinsic.Math.Mult(V.Local.fTolerance, V.Local.iTarget, V.Local.fDiff)
+		F.Intrinsic.Math.Add(V.Local.iTarget, V.Local.fDiff, V.Local.fMax)
+		F.Intrinsic.Math.Sub(V.Local.iTarget, V.Local.fDiff, V.Local.fMin)
+		
+		Gui.frmAddItem.txtMin.Text(V.Local.fMin)
+		Gui.frmAddItem.txtMax.Text(V.Local.fMax)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.txtFilmTarget_Change.End
+Program.Sub.txtFilmTolerance_Change.Start
+F.Intrinsic.Control.Try
+	V.Local.iTarget.Declare
+	V.Local.fTolerance.Declare
+	V.Local.fDiff.Declare
+	V.Local.fUpper.Declare
+	V.Local.fLower.Declare
+	V.Local.fMax.Declare
+	V.Local.fMin.Declare
+	
+	V.Local.iTarget.Set(V.Screen.frmAddItem!txtFilmTarget.Text)
+	V.Local.fTolerance.Set(V.Screen.frmAddItem!txtFilmTolerance.Text)
+	
+	F.Intrinsic.Control.If(V.Local.iTarget, <>, 0, AND, V.Local.fTolerance, <>, 0)
+		F.Intrinsic.Math.Div(V.Local.fTolerance, 100, V.Local.fTolerance)
+		F.Intrinsic.Math.Mult(V.Local.fTolerance, V.Local.iTarget, V.Local.fDiff)
+		F.Intrinsic.Math.Add(V.Local.iTarget, V.Local.fDiff, V.Local.fMax)
+		F.Intrinsic.Math.Sub(V.Local.iTarget, V.Local.fDiff, V.Local.fMin)
+		
+		Gui.frmAddItem.txtMin.Text(V.Local.fMin)
+		Gui.frmAddItem.txtMax.Text(V.Local.fMax)
+	F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.txtFilmTolerance_Change.End
+'Inspection Type Setup Screen
+Program.Sub.LoadDTInspTypeSetup.Start
+'This will reload the 2 tabs/gridviews 
+F.Intrinsic.Control.Try
+	V.Local.sSQL.Declare
+	V.Local.sControlList.Declare
+	V.Local.sControl.Declare
+	V.Local.i.Declare
+	V.Local.bIsCbo.Declare
+	V.Local.sCboName.Declare
+	
+	
+	
+	F.Intrinsic.Control.If(V.DataTable.dtInsp.Exists)
+		F.Data.DataTable.Close("dtInsp")
+	F.Intrinsic.Control.EndIf
+	
+	F.Intrinsic.Control.If(V.DataTable.dtMeasure.Exists)
+		F.Data.DataTable.Close("dtMeasure")
+	F.Intrinsic.Control.EndIf
+	
+	V.Local.sSQL.Set("select * from GCG_7093_INSP_TYPES")
+	F.Data.DataTable.CreateFromSQL("dtInsp", "con", V.Local.sSQL, True)
+	
+	V.Local.sSQL.Set("select * from GCG_7093_MEASURE")
+	F.Data.DataTable.CreateFromSQL("dtMeasure", "con", V.Local.sSQL, True)
+	
+	'Set up for combobox fields on measure tab
+	Gui.frmInspType..GetControlList(V.Local.sControlList)
+	F.Intrinsic.String.Split(V.Local.sControlList, "*!*", V.Local.sControlList)
+		'Search for only the combo boxes, returns list of comboboxes
+	V.Global.sInspTypeComboBoxes.Redim(0,0)
+	F.Intrinsic.Control.For(V.Local.i, 0, V.Local.sControlList.UBound, 1)
+		V.Local.sControl.Set(V.Local.sControlList(V.Local.i))
+		F.Intrinsic.Control.If(V.Local.sControl.Left3, =, "CBO")
+			F.Intrinsic.Variable.AddToArray(V.Global.sInspTypeComboBoxes, V.Local.sControl)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.i)
+	
+	F.Intrinsic.Variable.RemoveArrayElementByOrdinal(V.Global.sInspTypeComboBoxes, 0, V.Global.sInspTypeComboBoxes)
+		'Add/update combobox list to GCG_7093_MEAS_NAMES table
+	F.Intrinsic.String.Join(V.Global.sInspTypeComboBoxes, "#$#", V.Global.sInspTypeComboBoxes)
+	F.Data.DataTable.CreateFromString("dtCboNames", V.Global.sInspTypeComboBoxes, "COMBO_NAME", "String", "", "#$#")
+	F.Data.DataTable.SaveToDB("dtCboNames", "con", "GCG_7093_MEAS_NAMES", "COMBO_NAME", 256)
+	F.Data.DataTable.Close("dtCboNames")
+	
+		'Populate Comboboxes
+	F.Intrinsic.String.Split(V.Global.sInspTypeComboBoxes, "#$#", V.Global.sInspTypeComboBoxes)
+	
+	F.Intrinsic.Control.For(V.Local.i, 0, V.Global.sInspTypeComboBoxes.UBound, 1)
+		F.Intrinsic.String.Build("select ITEM_NAME from GCG_7093_MEAS_ITEMS where COMBO_ID in (select COMBO_ID from GCG_7093_MEAS_NAMES where COMBO_NAME = '{0}')", V.Global.sInspTypeComboBoxes(V.Local.i), V.Local.sSQL)
+		F.Data.DataTable.CreateFromSQL("dtCboItemsTemp", "con", V.Local.sSQL)
+		V.Local.sCboName.Set(V.Global.sInspTypeComboBoxes(V.Local.i))
+			'USE CUT AND PASTE IF YOU WANT TO MAKE CHANGES TO THE STRING LITERAL REFERENCING COMBOBOX NAME. CAUSES GABCE TO CRASH IF YOU TYPE AND LET INTELLISENSE RUN 
+		Gui.frmInspType.[V.Local.sCboName].ClearItems
+		Gui.frmInspType.[V.Local.sCboName].Text("")
+		Gui.frmInspType.[V.Local.sCboName].AddItems("DataTable", "dtCboItemsTemp", "ITEM_NAME", "ITEM_NAME")
+		'Add a blank item to allow users to clear the field 
+		Gui.frmInspType.[V.Local.sCboName].AddItem("", 0)
+		F.Data.DataTable.Close("dtCboItemsTemp")
+	F.Intrinsic.Control.Next(V.Local.i)
+	
+	'
+	
+	
+	'Update this global variable to quickly make changes to the saving/edit/remove logic for the custom tables. Should make PCC schema. Any edits for on screen references will need to go through form designer. NOT IMPLEMENTED, leave for future changes
+'	V.Global.sInspTypeColumns.Redim(0,0)
+'	V.Global.sMethodColumns.Redim(0,0)
+'	V.Global.sInspTypeColumns.Set("INSP_TYPE*!*INSP_DESC")
+'	V.Global.sMethodColumns.Set("METHOD*!*UNIT*!*SAMPLE_SIZE")
+'	F.Intrinsic.String.Split(V.Global.sInspTypeColumns, "*!*", V.Global.sInspTypeColumns)
+'	F.Intrinsic.String.Split(V.Global.sMethodColumns, "*!*", V.Global.sMethodColumns)
+	
+	'This called sub will take care of formatting both gridviews in the tabs 
+	F.Intrinsic.Control.CallSub(LoadGVInspTypeSetup, "DT", "dtInsp", "GV", "gvInsp", "GSGC", "GSGCInsp", "FRM", "frmInspType")
+	F.Intrinsic.Control.CallSub(LoadGVInspTypeSetup, "DT", "dtMeasure", "GV", "gvMeasure", "GSGC", "GSGCMeasure", "FRM", "frmInspType")
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.LoadDTInspTypeSetup.End
+Program.Sub.LoadGVInspTypeSetup.Start
+	V.Local.sFieldNames.Declare
+	V.Local.sColumns.Declare
+	V.Local.bRet.Declare
+	V.Local.sFormattedCaption.Declare
+	V.Local.iVisibleIndex.Declare(Long)
+	V.Local.sFRM.Declare
+	V.Local.sGSGC.Declare
+	V.Local.sGV.Declare
+	V.Local.sDT.Declare
+	V.Local.iCnt.Declare
+
+	'Load datatable into gridview and start formatting
+	Gui.[V.Args.FRM].[V.Args.GSGC].AddGridViewFromDataTable(V.Args.GV,V.Args.DT)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SuspendLayout()
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridViewProperty(V.Args.GV,"AllowSort",True)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridViewProperty(V.Args.GV,"AllowFilter",True)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridViewProperty(V.Args.GV,"OptionsViewShowGroupPanel",True)
+
+'Format GridView properties
+
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridviewProperty(V.Args.GV,  V.Enum.GridViewPropertyNames!ColumnAutoWidth, True)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridviewProperty(V.Args.GV, V.Enum.GridViewPropertyNames!ShowDetailTabs, False)
+	Gui.[V.Args.FRM].[V.Args.GSGC].SetGridviewProperty(V.Args.GV, V.Enum.GridViewPropertyNames!ShowDetailTabs, False)
+	
+	'Loop through columns names by using the V.DataTable.dtName.FieldNames
+	'F.Intrinsic.String.Concat("",V.DataTable.[V.Args.DT].FieldNames,V.Local.sFieldNames)
+	V.Local.sFieldNames.Set(V.DataTable.[V.Args.DT].FieldNames)
+	F.Intrinsic.String.Split(V.Local.sFieldNames,"*!*",V.Local.sColumns)
+	
+	F.Intrinsic.Control.For(V.Local.iCnt, 0, V.Local.sColumns.UBound, 1)
+		'Caption Formatting...  returns V.Args.sFromattedCaption with the formatted caption
+		F.Intrinsic.Control.CallSub(FormatCaption,"sCaption",V.Local.sColumns(V.Local.iCnt))
+		
+		'Main Properties
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"VisibleIndex",V.Local.iCnt)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"HeaderFontBold",True)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"HeaderHAlignment","Center")
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"CellHAlignment","Center")
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"ReadOnly",False)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowEdit",True)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"Caption",V.Args.sFormattedCaption)
+		
+		F.Intrinsic.Control.If(V.Local.sColumns(V.Local.iCnt), <>, "EDIT")
+			Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowFilter", False)
+		Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowSort", False)
+		F.Intrinsic.Control.EndIf
+		
+		'Set Column Buttons and a few specific properties 
+		F.Intrinsic.Control.SelectCase(V.Local.sColumns(V.Local.iCnt))
+			F.Intrinsic.Control.Case("KEY_SEQUENCE")
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"Visible", False)
+				Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"AllowShowHide", False)
+		F.Intrinsic.Control.EndSelect
+				
+		'Checks if abcd is present in name, if so then make it invisible and strip away those characters 	
+'		F.Intrinsic.String.IsInString(V.Args.sFormattedCaption, "abcd", False, V.Local.bRet)
+'		F.Intrinsic.Control.If(V.Local.bRet)
+'			Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"Visible", False)
+'			F.Intrinsic.String.Replace(V.Args.sFormattedCaption, "abcd", "", V.Local.sFormattedCaption)
+'			Gui.[V.Args.FRM].[V.Args.GSGC].SetColumnProperty(V.Args.GV,V.Local.sColumns(V.Local.iCnt),"Caption", V.Local.sFormattedCaption)
+'		F.Intrinsic.Control.EndIf
+				
+	F.Intrinsic.Control.Next(V.Local.iCnt)
+	
+	Gui.[V.Args.FRM].[V.Args.GSGC].BestFitColumns(V.Args.GV)
+	Gui.[V.Args.FRM].[V.Args.GSGC].ResumeLayout()
+	Gui.[V.Args.FRM].[V.Args.GSGC].MainView(V.Args.GV)
+Program.Sub.LoadGVInspTypeSetup.End
+Program.Sub.frmInspType_UnLoad.Start
+F.Intrinsic.Control.Try
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.frmInspType_UnLoad.End
+Program.Sub.ContextMenusInspType.Start
+F.Intrinsic.Control.Try
+	'Set Context Menus for Inspection Type Setup screen
+	Gui.frmInspType..ContextMenuCreate("ctxInspType")
+	'Gui.frmInspType..ContextMenuCreate("ctxRemoveType")
+	Gui.frmInspType..ContextMenuAddItem("ctxInspType", "EditType", 0, "Edit")
+	Gui.frmInspType..ContextMenuAddItem("ctxInspType", "Sep", 3)
+	Gui.frmInspType..ContextMenuAddItem("ctxInspType", "RemoveType", 0, "Remove")
+	Gui.frmInspType..ContextMenuSetItemEventHandler("ctxInspType", "EditType", "EditInspTypeScreen")
+	Gui.frmInspType..ContextMenuSetItemEventHandler("ctxInspType", "RemoveType", "RemoveInspTypeScreen")
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.ContextMenusInspType.End
+Program.Sub.cmdMeasureNew_Click.Start
+F.Intrinsic.Control.Try
+	V.Global.sCalledFrom.Set("Button")
+	gui.frmNewMeasure..Show
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdMeasureNew_Click.End
+Program.Sub.cmdTypeNew_Click.Start
+F.Intrinsic.Control.Try
+	'Set to determine in the save subroutine where it was called from
+	V.Global.sCalledFrom.Set("Button")
+	Gui.frmNewType..Show
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdTypeNew_Click.End
+Program.Sub.frmInspType_UnLoad.Start
+F.Intrinsic.Control.Try
+	F.Intrinsic.Control.End
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.frmInspType_UnLoad.End
+Program.Sub.frmNewType_UnLoad.Start
+F.Intrinsic.Control.Try
+	Gui.frmNewType..Visible(False)
+	gui.frmNewType.txtMethod.Text("")
+	gui.frmNewType.txtMethDesc.Text("")
+	Gui.frmNewType..Caption("Add New Inspection Type")
+	V.Global.sCalledFrom.Set("")
+	V.Global.sOrigValue.Set("")
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.frmNewType_UnLoad.End
+Program.Sub.frmNewMeasure_UnLoad.Start
+F.Intrinsic.Control.Try
+	gui.frmNewMeasure..Visible(False)
+	gui.frmNewMeasure.txtMethod.Text("")
+	gui.frmNewMeasure.txtUnits.Text("")
+	'gui.frmNewMeasure.txtSampleSize.Text("")
+	gui.frmNewMeasure..Caption("Add New Method")
+	V.Global.sCalledFrom.Set("")
+	V.Global.sOrigValue.Set("")
+	'AA
+	'gui.frmNewMeasure.txtGaugeNo.Text("")
+	'gui.frmNewMeasure.txtProcessDim.Text("")
+	gui.frmNewMeasure.txtMethDesc.Text("")
+	'gui.frmNewMeasure.txtMin.Text("")
+	'gui.frmNewMeasure.txtMax.Text("")
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, V.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.frmNewMeasure_UnLoad.End
+Program.Sub.EditInspTypeScreen.Start
+F.Intrinsic.Control.Try
+	V.Local.sInspType.Declare
+	V.Local.sInspDesc.Declare
+	V.Local.sMethod.Declare
+	V.Local.sMethodDesc.Declare
+	V.Local.sUnit.Declare
+	V.Local.iSampleSize.Declare
+	V.Local.sFrmTitle.Declare
+	V.Local.i.Declare
+
+'Determine which window to pull up based on which gridview was right clicked on 
+
+	F.Intrinsic.Control.If(V.Global.sGVInFocus, =, "GSGCINSP")
+		gui.frmInspType.GSGCInsp.GetCellValueByColumnName("gvInsp", "METHOD", V.Global.iRowIndex, V.Local.sMethod)
+		gui.frmInspType.GSGCInsp.GetCellValueByColumnName("gvInsp", "METHOD_DESCRIPTION", V.Global.iRowIndex, V.Local.sMethodDesc)
+		gui.frmInspType.GSGCInsp.GetCellValueByColumnName("gvInsp", "KEY_SEQUENCE", V.Global.iRowIndex, V.Global.sKeySeq)
+		
+		
+		V.Local.sMethod.Set(V.Local.sMethod.Trim)
+		V.Local.sMethodDesc.Set(V.Local.sMethodDesc.Trim)
+		gui.frmNewType.txtMethod.Text(V.Local.sMethod)
+		gui.frmNewType.txtMethDesc.Text(V.Local.sMethodDesc)
+		
+		F.Intrinsic.String.Build("Edit Inspection: {0}", V.Local.sMethod, V.Local.sFrmTitle)
+
+		Gui.frmNewType..Caption(V.Local.sFrmTitle)
+		V.Global.sCalledFrom.Set("CtxMenu")
+		Gui.frmNewType..Show
+	F.Intrinsic.Control.ElseIf(V.Global.sGVInFocus, =, "GSGCMEASURE")
+		gui.frmInspType.GSGCMeasure.GetCellValueByColumnName("gvMeasure", "METHOD", V.Global.iRowIndex, V.Local.sMethod)
+		gui.frmInspType.GSGCMeasure.GetCellValueByColumnName("gvMeasure", "METHOD_DESCRIPTION", V.Global.iRowIndex, V.Local.sMethodDesc)
+		gui.frmInspType.GSGCMeasure.GetCellValueByColumnName("gvMeasure", "UNIT", V.Global.iRowIndex, V.Local.sUnit)
+		gui.frmInspType.GSGCMeasure.GetCellValueByColumnName("gvMeasure", "KEY_SEQUENCE", V.Global.iRowIndex, V.Global.sKeySeq)
+		
+		V.Local.sMethod.Set(V.Local.sMethod.Trim)
+		V.Local.sMethodDesc.Set(V.Local.sMethodDesc)
+		V.Local.sUnit.Set(V.Local.sUnit.Trim)
+	
+		gui.frmNewMeasure.txtMethod.Text(V.Local.sMethod)
+		Gui.frmNewMeasure.txtMethDesc.Text(V.Local.sMethodDesc)
+		gui.frmNewMeasure.txtUnits.Text(V.Local.sUnit.Trim)
+		F.Intrinsic.String.Build("Edit Measure: {0}", V.Local.sMethod, V.Local.sFrmTitle)
+		
+		Gui.frmNewType..Caption(V.Local.sFrmTitle)
+		V.Global.sCalledFrom.Set("CtxMenu")
+		
+		gui.frmNewMeasure..Show
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.EditInspTypeScreen.End
+Program.Sub.RemoveInspTypeScreen.Start
+F.Intrinsic.Control.Try
+
+	V.Local.sInspType.Declare
+	V.Local.sInspDesc.Declare
+	V.Local.sMethod.Declare
+	V.Local.sUnit.Declare
+	V.Local.iSampleSize.Declare
+	V.Local.sFrmTitle.Declare
+	V.Local.sSQL.Declare
+	
+	'Remove row that was right clicked on 
+	
+	F.Intrinsic.Control.If(V.Global.sGVInFocus, =, "GSGCINSP")
+		gui.frmInspType.GSGCInsp.GetCellValueByColumnName("gvInsp", "KEY_SEQUENCE", V.Global.iRowIndex, V.Global.sKeySeq)
+		
+		F.Intrinsic.String.Build("delete from GCG_7093_INSP_TYPES where KEY_SEQUENCE = '{0}'", V.Global.sKeySeq, V.Local.sSQL)
+		
+		F.ODBC.Connection!con.Execute(V.Local.sSQL)
+		'
+		
+		F.Data.DataTable.DeleteRow("dtInsp", V.Global.iRowIndex)
+	F.Intrinsic.Control.ElseIf(V.Global.sGVInFocus, =, "GSGCMEASURE")
+		gui.frmInspType.GSGCMeasure.GetCellValueByColumnName("gvMeasure", "KEY_SEQUENCE", V.Global.iRowIndex, V.Global.sKeySeq)
+		
+		F.Intrinsic.String.Build("delete from GCG_7093_MEASURE where KEY_SEQUENCE = '{0}'", V.Global.sKeySeq, V.Local.sSQL)
+		
+		F.ODBC.Connection!con.Execute(V.Local.sSQL)
+		'
+		
+		F.Data.DataTable.DeleteRow("dtMeasure", V.Global.iRowIndex)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.RemoveInspTypeScreen.End
+Program.Sub.GSGCInsp_RowCellClick.Start
+F.Intrinsic.Control.SetErrorHandler("GSGCInsp_RowCellClick_Err")
+F.Intrinsic.Control.ClearErrors
+	V.Local.iX.Declare
+	V.Local.iY.Declare
+	
+	'Grab info from row that was clicked and show correct context menu depending on which Gridview is active 
+	F.Intrinsic.Control.If(V.Args.Button.UCase, =, "RIGHT")
+		F.Intrinsic.Control.If(V.Args.RowIndex, <>, -1)
+			F.Intrinsic.API.GetMousePosition(V.Local.iX, V.Local.iY)
+			V.Global.iRowIndex.Set(V.Args.RowIndex)
+			V.Global.sGVInFocus.Set(V.Args.ControlName.Trim)
+		F.Intrinsic.Control.EndIf
+		Gui.frmInspType..ContextMenuShow("ctxInspType", V.Local.iX, V.Local.iY)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Label("GSGCInsp_RowCellClick_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber, <>, 0)
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndIf
+Program.Sub.GSGCInsp_RowCellClick.End
+Program.Sub.GSGCMeasure_RowCellClick.Start
+F.Intrinsic.Control.Try
+	V.Local.iX.Declare
+	V.Local.iY.Declare
+	'Grab info from row that was clicked and show correct context menu depending on which Gridview is active 
+	F.Intrinsic.Control.If(V.Args.Button.UCase, =, "RIGHT")
+		F.Intrinsic.Control.If(V.Args.RowIndex, <>, -1)
+			F.Intrinsic.API.GetMousePosition(V.Local.iX, V.Local.iY)
+			V.Global.iRowIndex.Set(V.Args.RowIndex)
+			V.Global.sGVInFocus.Set(V.Args.ControlName.Trim)
+		F.Intrinsic.Control.EndIf
+		Gui.frmInspType..ContextMenuShow("ctxInspType", V.Local.iX, V.Local.iY)
+	F.Intrinsic.Control.EndIf
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.GSGCMeasure_RowCellClick.End
+Program.Sub.cmdSaveNewMeasure_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sSQL.Declare
+	V.Local.sMethod.Declare
+	V.Local.sMethodDesc.Declare
+	V.Local.sUnits.Declare
+	V.Local.sSampleSize.Declare
+	V.Local.sMsg.Declare
+		
+	
+	V.Local.sMethod.Set(V.Screen.frmNewMeasure!txtMethod.Text.trim)
+	V.Local.sMethodDesc.Set(V.Screen.frmNewMeasure!txtMethDesc.Text.Trim)
+	V.Local.sUnits.Set(V.Screen.frmNewMeasure!txtUnits.Text.trim)
+	F.Intrinsic.Control.If(V.Local.sMethod, =, "")
+		V.Local.sMsg.Set("Please fill out the method field before saving")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	
+	
+	'Determine if we should be updating row record or inserting new one based on which subroutine called this
+	F.Intrinsic.Control.If(V.Global.sCalledFrom, =, "CtxMenu")
+		F.Intrinsic.String.Build("update GCG_7093_MEASURE set METHOD = '{0}', METHOD_DESCRIPTION = '{1}', UNIT = '{2}' where KEY_SEQUENCE = '{3}'", V.Local.sMethod.PSQLFriendly, V.Local.sMethodDesc.PSQLFriendly, V.Local.sUnits.PSQLFriendly, V.Global.sKeySeq, V.Local.sSQL)
+	F.Intrinsic.Control.ElseIf(V.Global.sCalledFrom, =, "Button")
+		F.Intrinsic.String.Build("insert into GCG_7093_MEASURE (METHOD, METHOD_DESCRIPTION, UNIT) values ('{0}', '{1}', '{2}')", V.Local.sMethod.PSQLFriendly, V.Local.sMethodDesc.PSQLFriendly, V.Local.sUnits.PSQLFriendly, V.Local.sSQL)
+	F.Intrinsic.Control.Else
+		'
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+	'
+	F.Intrinsic.UI.Msgbox("Value Saved")
+	F.Intrinsic.Control.CallSub(frmNewMeasure_UnLoad)
+	'Update Grid
+	F.Intrinsic.Control.CallSub(LoadDTInspTypeSetup)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSaveNewMeasure_Click.End
+Program.Sub.cmdSaveInspType_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.sSQL.Declare
+	V.Local.sMeasure.Declare
+	V.Local.sMeasureDesc.Declare
+	V.Local.sMsg.Declare
+	
+	V.Local.sMeasure.Set(V.Screen.frmNewType!txtMethod.Text.trim)
+	V.Local.sMeasureDesc.Set(V.Screen.frmNewType!txtMethDesc.Text.trim)
+	
+								
+	F.Intrinsic.Control.If(V.Local.sMeasure, =, "")
+		V.Local.sMsg.Set("Please fill out the method field before saving")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	
+	
+	'Determine if we should be updating row record or inserting new one based on which subroutine called this
+	F.Intrinsic.Control.If(V.Global.sCalledFrom, =, "CtxMenu")
+		F.Intrinsic.String.Build("update GCG_7093_INSP_TYPES set METHOD = '{0}', METHOD_DESCRIPTION = '{1}' where KEY_SEQUENCE = '{2}'", V.Local.sMeasure.PSQLFriendly, V.Local.sMeasureDesc.PSQLFriendly, V.Global.sKeySeq, V.Local.sSQL)
+	F.Intrinsic.Control.ElseIf(V.Global.sCalledFrom, =, "Button")
+		F.Intrinsic.String.Build("insert into GCG_7093_INSP_TYPES (METHOD, METHOD_DESCRIPTION) values ('{0}', '{1}')", V.Local.sMeasure.PSQLFriendly, V.Local.sMeasureDesc.PSQLFriendly, V.Local.sSQL)
+	F.Intrinsic.Control.Else
+		'
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.Execute(V.Local.sSQL)
+	'
+	F.Intrinsic.UI.Msgbox("Value Saved")
+	F.Intrinsic.Control.CallSub(frmNewType_UnLoad)
+	'Update Grid
+	F.Intrinsic.Control.CallSub(LoadDTInspTypeSetup)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSaveInspType_Click.End
+Program.Sub.cmdSubmitMeasures_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.i.Declare
+	V.Local.sRowDataToSave.Declare
+	V.Local.sCboTextValue.Declare
+	V.Local.sMsg.Declare
+	V.Local.sFilter.Declare
+	V.Local.iNameTableMatch.Declare
+	
+	'Open Up the Names table to be able to reference the combo boxes combo IDs when updating values in the items table 
+	
+	F.Data.DataTable.CreateFromSQL("dtCboNames", "con", "select * from GCG_7093_MEAS_NAMES")
+	
+	'Loop through all cbo fields and save values to the Custom Items table 
+	F.Intrinsic.Control.For(V.Local.i, 0, V.Global.sInspTypeComboBoxes.UBound, 1)
+		V.Local.sCboTextValue.Set(V.Screen.frmInspType![V.Global.sInspTypeComboBoxes(V.Local.i)].Text.Trim)
+		F.Intrinsic.String.Build("COMBO_NAME = '{0}'", V.Global.sInspTypeComboBoxes(V.Local.i), V.Local.sFilter)
+		F.Data.DataTable.Select("dtCboNames", V.Local.sFilter, V.Local.iNameTableMatch)
+		'First time, don't have delmiters at beginining 
+		F.Intrinsic.Control.If(V.Local.sCboTextValue, <>, "", AND, V.Local.sRowDataToSave, =, "")
+			F.Intrinsic.String.Build("{0}*!*{1}", V.DataTable.dtCboNames(V.Local.iNameTableMatch).COMBO_ID!FieldVal, V.Local.sCboTextValue, V.Local.sRowDataToSave)
+		'Otherwise we're just concacting data
+		F.Intrinsic.Control.ElseIf(V.Local.sCboTextValue, <>, "", AND, V.Local.sRowDataToSave, <>, "")
+			F.Intrinsic.String.Build("{0}#$#{1}*!*{2}", V.Local.sRowDataToSave, V.DataTable.dtCboNames(V.Local.iNameTableMatch).COMBO_ID!FieldVal, V.Local.sCboTextValue, V.Local.sRowDataToSave)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.i)
+	
+	F.Data.DataTable.Close("dtCboNames")
+	
+	F.Data.DataTable.CreateFromString("dtCboItemsToSave", V.Local.sRowDataToSave, "COMBO_ID*!*ITEM_NAME", "Long*!*String", "*!*", "#$#")
+	F.Intrinsic.String.Build("Successfully saved {0} value(s)", V.DataTable.dtCboItemsToSave.RowCount, V.Local.sMsg)
+	
+	F.Data.DataTable.SaveToDB("dtCboItemsToSave", "con", "GCG_7093_MEAS_ITEMS", "ITEM_NAME", 256)
+	F.Data.DataTable.Close("dtCboItemsToSave")
+	
+	'
+	
+	'Reset all values on the combo boxes and alert user that save was successful
+	F.Intrinsic.UI.Msgbox(V.Local.sMsg, "Combo Box Values Saved")
+	F.Intrinsic.Control.CallSub(LoadDTInspTypeSetup)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdSubmitMeasures_Click.End
+Program.Sub.cmdDeleteValues_Click.Start
+F.Intrinsic.Control.Try
+	V.Local.i.Declare
+	V.Local.sCboTextValue.Declare
+	V.Local.sMsg.Declare
+	V.Local.sFilter.Declare
+	V.Local.iNameTableMatch.Declare
+	V.Local.sSQL.Declare
+	V.Local.iDeletedCount.Declare
+	
+	'Open Up the Names table to be able to reference the combo boxes combo IDs when deleting values in the items table 
+	
+	F.Data.DataTable.CreateFromSQL("dtCboNames", "con", "select * from GCG_7093_MEAS_NAMES")
+	
+	'Loop through all cbo fields and delete values currently entered from Custom Items table 
+	F.Intrinsic.Control.For(V.Local.i, 0, V.Global.sInspTypeComboBoxes.UBound, 1)
+		V.Local.sCboTextValue.Set(V.Screen.frmInspType![V.Global.sInspTypeComboBoxes(V.Local.i)].Text.Trim)
+		F.Intrinsic.String.Build("COMBO_NAME = '{0}'", V.Global.sInspTypeComboBoxes(V.Local.i), V.Local.sFilter)
+		F.Data.DataTable.Select("dtCboNames", V.Local.sFilter, V.Local.iNameTableMatch)
+		'First time, don't have delimiters at beginining 
+		F.Intrinsic.Control.If(V.Local.sCboTextValue, <>, "")
+			F.Intrinsic.String.Build("delete from GCG_7093_MEAS_ITEMS where COMBO_ID = '{0}' and ITEM_NAME = '{1}'", V.DataTable.dtCboNames(V.Local.iNameTableMatch).COMBO_ID!FieldVal, V.Local.sCboTextValue.PSQLFriendly, V.Local.sSQL)
+			F.ODBC.Connection!con.Execute(V.Local.sSQL)
+			V.Local.iDeletedCount.Set(V.Local.iDeletedCount.++)
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Next(V.Local.i)
+	
+	F.Data.DataTable.Close("dtCboNames")
+	
+	F.Intrinsic.String.Build("Successfully deleted {0} value(s)", V.Local.iDeletedCount, V.Local.sMsg)
+	
+	'
+	
+	'Reset all values on the combo boxes and alert user that save was successful
+	F.Intrinsic.UI.Msgbox(V.Local.sMsg, "Combo Box Values Deleted")
+	F.Intrinsic.Control.CallSub(LoadDTInspTypeSetup)
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.cmdDeleteValues_Click.End
+
+Program.Sub.CreateTables.Start
+F.Intrinsic.Control.Try
+	V.Local.bExists.Declare
+	'Due to our internal manifest tool not supporting foreign keys, will need to build tables here 
+	F.ODBC.Connection!con.TableExists("GCG_7093_INSP_TYPES", V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_7093_INSP_TYPES (KEY_SEQUENCE IDENTITY DEFAULT '0' CONSTRAINT UK_KEY_SEQUENCE UNIQUE USING 0, METHOD CHAR(40), METHOD_DESCRIPTION CHAR(60));")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.TableExists("GCG_7093_MEASURE", V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_7093_MEASURE (KEY_SEQUENCE IDENTITY DEFAULT '0' CONSTRAINT UK_KEY_SEQUENCE UNIQUE USING 0,, METHOD CHAR(40), METHOD_DESCRIPTION CHAR(60));")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.TableExists("GCG_7093_INSP_PLAN", V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_7093_INSP_PLAN (KEY_SEQUENCE IDENTITY DEFAULT '0' CONSTRAINT UK_KEY_SEQUENCE UNIQUE USING 0, PRIORITY CHAR(3), JOB CHAR(6), SUFFIX CHAR(3), SEQ CHAR(6), ROUTER VARCHAR(20), RTR_SEQ CHAR(6), INSP_METHOD VARCHAR(40), INSP_METHOD_DESC VARCHAR(60), MEASURE_METHOD VARCHAR(40), MEASURE_METHOD_DESC VARCHAR(60), FILM_TYPE VARCHAR(40), FILM_TARGET NUMERIC(9,0), FILM_TOLERANCE NUMERIC(5,2), EXPECTED_RI NUMERIC(9,2), EXPECTED_RI_OPERATOR CHAR(10), EXPECTED_RI_RANGE NUMERIC(9,2), UNIT VARCHAR(10), MEASURE_MIN NUMERIC(9,4), MEASURE_MAX NUMERIC(9,4));")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.TableExists("GCG_7093_SCRIBE", V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_7093_SCRIBE (JOB CHAR(6), SUFFIX CHAR(3), ROUTER VARCHAR(20), RTR_SEQ CHAR(6), SCRIBE_CHECK BIT NOT NULL);")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.TableExists("GCG_7093_MEAS_NAMES", V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_7093_MEAS_NAMES (COMBO_ID IDENTITY DEFAULT '0' CONSTRAINT UK_KEY_SEQUENCE UNIQUE USING 0 PRIMARY KEY, COMBO_NAME VARCHAR(50));")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.TableExists("GCG_7093_MEAS_ITEMS", V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_7093_MEAS_ITEMS (COMBO_ID INT, ITEM_NAME VARCHAR(40), FOREIGN KEY (COMBO_ID) REFERENCES GCG_7093_MEAS_NAMES(COMBO_ID));")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.TableExists("GCG_7093_FLIR", V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_7093_FLIR (ID_Col NUMERIC(8,0) NOT NULL, Order_No CHAR(7) NOT NULL, Line_No CHAR(3) NOT NULL, Lot_ID CHAR(50), Scribe CHAR(50), Date_Col DATE DEFAULT CURDATE() NOT NULL, User_Col CHAR(9));")
+	F.Intrinsic.Control.EndIf
+	
+	F.ODBC.Connection!con.TableExists("GCG_7093_CertMaint", V.Local.bExists)
+	F.Intrinsic.Control.If(V.Local.bExists.Not)
+		F.ODBC.Connection!con.Execute("CREATE TABLE GCG_7093_CertMaint (Customer CHAR(6), Report_Path CHAR(200));")
+	F.Intrinsic.Control.EndIf	
+	
+F.Intrinsic.Control.Catch
+	F.Intrinsic.Control.CallSub(ErrorMsg, CurrentSub, v.Ambient.CurrentSubroutine)
+F.Intrinsic.Control.EndTry
+Program.Sub.CreateTables.End
+
+Program.Sub.Comments.Start
+${$5$}$20.1.8474.24170$}$1
+${$6$}$bmedina$}$20230607182921585$}$kOipCrsyLBVj2KoSwkcdK23ChxGVcBlErj25AwbBEKsBd8g+5icb+GvZfRBj921fn6VEMYvn7wY=
+Program.Sub.Comments.End
